@@ -74,15 +74,9 @@ a:focus-visible {
   background: var(--paper);
   box-shadow: 0 18px 55px rgba(15, 23, 42, 0.18);
   margin: 24px auto;
-  min-height: 297mm;
+  min-height: auto;
   padding: var(--page-padding-y) var(--page-padding-x);
-  width: min(210mm, calc(100% - 24px));
-}
-
-@media (min-width: 721px) {
-  .resume {
-    width: 210mm;
-  }
+  width: min(860px, calc(100% - 24px));
 }
 
 .resume__header {
