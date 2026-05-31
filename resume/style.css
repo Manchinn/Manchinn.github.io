@@ -180,11 +180,17 @@ dd {
   page-break-inside: avoid;
 }
 
+.item-header,
 .item__heading {
   align-items: baseline;
   display: flex;
-  gap: 12px;
+  gap: 16px;
   justify-content: space-between;
+}
+
+.item-title {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 h3 {
@@ -194,10 +200,13 @@ h3 {
   page-break-after: avoid;
 }
 
+.item-date,
 time {
   color: var(--muted);
   flex: 0 0 auto;
   font-size: 0.92rem;
+  text-align: right;
+  white-space: nowrap;
 }
 
 ul {
@@ -218,14 +227,13 @@ li {
     width: 100%;
   }
 
-  .item__heading,
   .skills div {
     display: block;
   }
 
-  time {
-    display: block;
-    margin-top: 4px;
+  .item-header,
+  .item__heading {
+    gap: 10px;
   }
 
   .contact > * {
@@ -332,6 +340,11 @@ li {
 
   .resume__header {
     margin-bottom: 5px;
+  }
+
+  .item-header,
+  .item__heading {
+    gap: 10px;
   }
 
   .item + .item {
