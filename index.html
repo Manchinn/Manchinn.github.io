@@ -3,116 +3,262 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070807">
     <meta
       name="description"
-      content="Manchinn Navigator is a central portal for projects, tools, experiments, and developer work."
+      content="Manchinn Navigator is the public identity hub for Chinnakrit Sripan, linking portfolio, prompt systems, GitHub, and practical AI automation work."
     >
-    <meta name="theme-color" content="#050814">
+    <meta property="og:title" content="Manchinn Navigator">
+    <meta
+      property="og:description"
+      content="Public route map for portfolio work, prompt systems, GitHub projects, and AI automation experiments."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manchinn.github.io/">
+    <meta property="og:image" content="https://github.com/Manchinn.png?size=420">
     <title>Manchinn Navigator</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://github.com">
+    <link rel="preconnect" href="https://avatars.githubusercontent.com">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page-shell">
-      <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">Developer Portal</p>
-        <h1 id="page-title">Manchinn Navigator</h1>
-        <p class="subtitle">
-          A central portal for my projects, tools, experiments, and developer work.
-        </p>
-        <p class="description">
-          I build full-stack applications, AI-assisted workflows, and practical tools for real-world use.
+    <canvas id="route-canvas" aria-hidden="true"></canvas>
+    <div class="page-texture" aria-hidden="true"></div>
+
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="#home" aria-label="Manchinn Navigator home">
+        <span class="brand-mark">M</span>
+        <span>Manchinn</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#routes">Routes</a>
+        <a href="#systems">Systems</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+        <span class="eyebrow">Public identity hub</span>
+        <h1 id="hero-title">Manchinn Navigator</h1>
+        <p class="hero-lede">
+          A fast route map into Chinnakrit Sripan's public portfolio, prompt systems,
+          resume, products, GitHub work, and practical AI automation experiments.
         </p>
 
-        <div class="actions" aria-label="Primary links">
-          <a
-            class="button button-primary"
-            href="https://chinnakrit.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Portfolio
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button button-primary" href="https://chinnakrit.dev" target="_blank" rel="noreferrer">
+              Open Portfolio
+            </a>
+            <a class="button button-secondary" href="/resume/">
+              View Resume
+            </a>
+            <a class="button button-secondary" href="https://github.com/Manchinn" target="_blank" rel="noreferrer">
+              View GitHub
+            </a>
+          </div>
+
+          <div class="signal-strip" aria-label="Work focus areas">
+            <span>AI Agents</span>
+            <span>Automation</span>
+            <span>Full-stack</span>
+            <span>Prompt Systems</span>
+          </div>
+        </div>
+
+        <div class="navigator-stage reveal" aria-label="Animated public route navigator">
+          <div class="orbit-map">
+            <span class="orbit-ring ring-one" aria-hidden="true"></span>
+            <span class="orbit-ring ring-two" aria-hidden="true"></span>
+            <span class="route-line line-a" aria-hidden="true"></span>
+            <span class="route-line line-b" aria-hidden="true"></span>
+            <span class="route-line line-c" aria-hidden="true"></span>
+            <span class="route-line line-d" aria-hidden="true"></span>
+
+            <div class="core">
+              <img
+                class="avatar"
+                src="https://github.com/Manchinn.png?size=220"
+                alt="Manchinn GitHub avatar"
+                width="132"
+                height="132"
+                decoding="async"
+              >
+              <span class="avatar-fallback" hidden>MC</span>
+              <span class="core-label">Chinnakrit Sripan</span>
+            </div>
+
+            <a class="route-node node-portfolio" href="https://chinnakrit.dev" target="_blank" rel="noreferrer">
+              <span>01</span>
+              <strong>Portfolio</strong>
+            </a>
+            <a class="route-node node-prompts" href="https://prompts.chinnakrit.dev" target="_blank" rel="noreferrer">
+              <span>02</span>
+              <strong>Prompts</strong>
+            </a>
+            <a class="route-node node-github" href="https://github.com/Manchinn" target="_blank" rel="noreferrer">
+              <span>03</span>
+              <strong>GitHub</strong>
+            </a>
+            <a class="route-node node-readme" href="/resume/">
+              <span>04</span>
+              <strong>Resume</strong>
+            </a>
+            <a class="route-node node-workflows" href="https://cslogbook.me" target="_blank" rel="noreferrer">
+              <span>05</span>
+              <strong>CSLogbook</strong>
+            </a>
+            <a class="route-node node-contact" href="#contact">
+              <span>06</span>
+              <strong>Contact</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="routes" class="section-panel" aria-labelledby="routes-title">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Primary routes</span>
+          <h2 id="routes-title">Public links that should stay easy to reach.</h2>
+        </div>
+
+        <div class="route-grid">
+          <a class="route-card reveal" href="https://chinnakrit.dev" target="_blank" rel="noreferrer">
+            <span class="route-index">01</span>
+            <h3>Portfolio</h3>
+            <p>Projects, demos, experience, and current public positioning.</p>
+            <span class="route-target">chinnakrit.dev</span>
           </a>
-          <a class="button button-secondary" href="/resume/">
-            View Resume
+
+          <a class="route-card reveal" href="/resume/">
+            <span class="route-index">02</span>
+            <h3>Resume</h3>
+            <p>Focused background, skills, and experience in a cleaner reading format.</p>
+            <span class="route-target">manchinn.github.io/resume</span>
+          </a>
+
+          <a class="route-card reveal" href="https://prompts.chinnakrit.dev" target="_blank" rel="noreferrer">
+            <span class="route-index">03</span>
+            <h3>Prompt Library</h3>
+            <p>Prompt workflows for AI coding agents and developer productivity.</p>
+            <span class="route-target">prompts.chinnakrit.dev</span>
+          </a>
+
+          <a class="route-card reveal" href="https://github.com/Manchinn" target="_blank" rel="noreferrer">
+            <span class="route-index">04</span>
+            <h3>GitHub</h3>
+            <p>Repositories, activity, profile README, and public build history.</p>
+            <span class="route-target">github.com/Manchinn</span>
+          </a>
+
+          <a class="route-card reveal" href="https://cslogbook.me" target="_blank" rel="noreferrer">
+            <span class="route-index">05</span>
+            <h3>CSLogbook</h3>
+            <p>Student activity logbook and progress tracking platform.</p>
+            <span class="route-target">cslogbook.me</span>
+          </a>
+
+          <a class="route-card reveal" href="https://hermes.cslogbook.me" target="_blank" rel="noreferrer">
+            <span class="route-index">06</span>
+            <h3>Hermes Agent</h3>
+            <p>Assistant and automation gateway experiment for practical workflows.</p>
+            <span class="route-target">hermes.cslogbook.me</span>
+          </a>
+
+          <a class="route-card reveal" href="https://github.com/Manchinn/ai-video-lab" target="_blank" rel="noreferrer">
+            <span class="route-index">07</span>
+            <h3>AI Video Lab</h3>
+            <p>Scriptable AI video workflow for short-form content experiments.</p>
+            <span class="route-target">github.com/Manchinn/ai-video-lab</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="systems" class="systems-section" aria-labelledby="systems-title">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Operating map</span>
+          <h2 id="systems-title">A practical stack for building and shipping.</h2>
+        </div>
+
+        <div class="systems-layout">
+          <div class="systems-copy reveal">
+            <p>
+              The public identity points toward reusable systems: AI agent workflows,
+              prompt engineering, full-stack apps, automation, and developer tooling.
+            </p>
+            <div class="ticker" aria-hidden="true">
+              <div class="ticker-track">
+                <span>Codex</span>
+                <span>Claude Code</span>
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>CSLogbook</span>
+                <span>Node.js</span>
+                <span>Docker</span>
+                <span>Nginx</span>
+                <span>LINE Webhooks</span>
+                <span>Codex</span>
+                <span>Claude Code</span>
+                <span>Next.js</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <ol class="system-timeline reveal" aria-label="Workflow sequence">
+            <li>
+              <span>Plan</span>
+              <strong>Route the work</strong>
+              <p>Turn rough ideas into scoped systems, pages, prompts, or automations.</p>
+            </li>
+            <li>
+              <span>Build</span>
+              <strong>Ship the useful core</strong>
+              <p>Keep the first version public-safe, fast to inspect, and easy to improve.</p>
+            </li>
+            <li>
+              <span>Operate</span>
+              <strong>Connect it to real workflows</strong>
+              <p>Move from demo pages into repeatable tooling, reports, and agent handoffs.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-band reveal" aria-labelledby="contact-title">
+        <div>
+          <span class="eyebrow">Connect</span>
+          <h2 id="contact-title">Start from the public route that fits the work.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://github.com/Manchinn" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a class="button button-secondary" href="https://chinnakrit.dev" target="_blank" rel="noreferrer">
+            Portfolio
+          </a>
+          <a class="button button-secondary" href="mailto:chinnakrit.srp@gmail.com">
+            Email
           </a>
           <a
             class="button button-secondary"
-            href="https://github.com/Manchinn"
+            href="https://www.linkedin.com/in/chinnakrit-sripan-4674a436a/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
           >
-            GitHub
+            LinkedIn
           </a>
         </div>
-      </section>
-
-      <section class="navigator" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">Project Navigator</p>
-          <h2 id="projects-title">Projects and experiments</h2>
-        </div>
-
-        <div class="card-grid">
-          <a
-            class="project-card"
-            href="https://prompts.chinnakrit.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="card-kicker">AI Workflow</span>
-            <h3>Prompt Library</h3>
-            <p>Curated AI coding prompts, agent workflows, and developer resources.</p>
-          </a>
-
-          <a
-            class="project-card"
-            href="https://cslogbook.me"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="card-kicker">Product</span>
-            <h3>CSLogbook</h3>
-            <p>Full-stack student activity logbook and progress tracking platform.</p>
-          </a>
-
-          <a
-            class="project-card"
-            href="https://hermes.cslogbook.me"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="card-kicker">Assistant</span>
-            <h3>Hermes Agent</h3>
-            <p>Personal assistant and automation gateway experiment.</p>
-          </a>
-
-          <a
-            class="project-card"
-            href="https://github.com/Manchinn/ai-video-lab"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="card-kicker">Experiment</span>
-            <h3>AI Video Lab</h3>
-            <p>Scriptable AI video generation workflow for short-form content experiments.</p>
-          </a>
-        </div>
-      </section>
-
-      <section class="contact-strip" aria-label="Contact links">
-        <a href="mailto:chinnakrit.srp@gmail.com">Email</a>
-        <a
-          href="https://www.linkedin.com/in/chinnakrit-sripan-4674a436a/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
       </section>
     </main>
 
-    <footer class="site-footer">
-      Built by Manchinn • Developer Portal
+    <footer class="footer">
+      <span>Manchinn Navigator</span>
+      <span>Public identity hub for AI automation and full-stack systems.</span>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
