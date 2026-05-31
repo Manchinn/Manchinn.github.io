@@ -15,9 +15,9 @@
 html {
   background: var(--screen);
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 10.5pt;
-  line-height: 1.24;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
 }
 
 body {
@@ -75,14 +75,14 @@ a:focus-visible {
   box-shadow: none;
   margin: 0 auto;
   min-height: auto;
-  padding: 32px 20px 44px;
+  padding: 44px 24px 64px;
   width: min(920px, 100%);
 }
 
 .resume__header {
   border-bottom: 2px solid var(--line);
-  margin-bottom: 7px;
-  padding-bottom: 5px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
   text-align: center;
 }
 
@@ -96,27 +96,27 @@ dl {
 }
 
 h1 {
-  font-size: 19pt;
+  font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.08;
   text-transform: uppercase;
 }
 
 .title {
-  font-size: 10.5pt;
+  font-size: 1.05rem;
   font-weight: 700;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 
 .contact {
   color: var(--muted);
   display: flex;
   flex-wrap: wrap;
-  font-size: 8.2pt;
+  font-size: 0.92rem;
   font-style: normal;
-  gap: 3px 10px;
+  gap: 6px 14px;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 12px;
 }
 
 .contact > * {
@@ -125,18 +125,18 @@ h1 {
 
 section {
   break-inside: avoid;
-  margin-top: 6px;
+  margin-top: 24px;
   page-break-inside: avoid;
 }
 
 h2 {
   border-bottom: 1px solid var(--line);
   break-after: avoid;
-  font-size: 9.2pt;
+  font-size: 0.82rem;
   letter-spacing: 0;
-  line-height: 1.15;
-  margin-bottom: 3px;
-  padding-bottom: 1.5px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
   page-break-after: avoid;
   text-transform: uppercase;
 }
@@ -145,22 +145,22 @@ section > p,
 .item p,
 li,
 dd {
-  font-size: 9pt;
+  font-size: 1rem;
 }
 
 .skills {
   display: grid;
-  gap: 0;
+  gap: 4px;
 }
 
 .skills div {
   display: grid;
-  gap: 8px;
-  grid-template-columns: 74px 1fr;
+  gap: 16px;
+  grid-template-columns: 110px 1fr;
 }
 
 dt {
-  font-size: 9pt;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -169,7 +169,7 @@ dd {
 }
 
 .item + .item {
-  margin-top: 3px;
+  margin-top: 16px;
 }
 
 .item {
@@ -186,7 +186,7 @@ dd {
 
 h3 {
   break-after: avoid;
-  font-size: 9pt;
+  font-size: 1rem;
   font-weight: 700;
   page-break-after: avoid;
 }
@@ -194,16 +194,16 @@ h3 {
 time {
   color: var(--muted);
   flex: 0 0 auto;
-  font-size: 8.3pt;
+  font-size: 0.92rem;
 }
 
 ul {
-  margin-top: 1px;
-  padding-left: 15px;
+  margin-top: 6px;
+  padding-left: 22px;
 }
 
 li {
-  margin-top: 0;
+  margin-top: 4px;
 }
 
 @media (max-width: 720px) {
@@ -211,7 +211,7 @@ li {
     box-shadow: none;
     margin: 0;
     min-height: auto;
-    padding: 24px 18px;
+    padding: 32px 18px 48px;
     width: 100%;
   }
 
@@ -222,7 +222,7 @@ li {
 
   time {
     display: block;
-    margin-top: 2px;
+    margin-top: 4px;
   }
 
   .contact > * {
@@ -249,6 +249,7 @@ li {
   }
 
   html {
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 10.5pt;
     line-height: 1.18;
   }
@@ -295,6 +296,11 @@ li {
     font-size: 8.8pt;
   }
 
+  .contact {
+    gap: 3px 10px;
+    margin-top: 5px;
+  }
+
   h2 {
     font-size: 9pt;
     margin-bottom: 2px;
@@ -324,6 +330,10 @@ li {
   .resume__header {
     margin-bottom: 5px;
     padding-bottom: 4px;
+  }
+
+  .item + .item {
+    margin-top: 3px;
   }
 
   .skills {
