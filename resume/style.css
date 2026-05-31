@@ -14,7 +14,8 @@ html {
   background: var(--screen);
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.32;
+  font-size: 11px;
+  line-height: 1.28;
 }
 
 body {
@@ -72,13 +73,13 @@ a:focus-visible {
   margin: 28px auto;
   max-width: 210mm;
   min-height: 297mm;
-  padding: 15mm 16mm;
+  padding: 14mm 15mm;
 }
 
 .resume__header {
   border-bottom: 2px solid var(--line);
-  margin-bottom: 10px;
-  padding-bottom: 7px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
   text-align: center;
 }
 
@@ -92,14 +93,14 @@ dl {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 24px;
   letter-spacing: 0;
   line-height: 1;
   text-transform: uppercase;
 }
 
 .title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   margin-top: 4px;
 }
@@ -108,7 +109,7 @@ h1 {
   color: var(--muted);
   display: flex;
   flex-wrap: wrap;
-  font-size: 10.5px;
+  font-size: 10px;
   font-style: normal;
   gap: 3px 10px;
   justify-content: center;
@@ -120,15 +121,15 @@ h1 {
 }
 
 section {
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 h2 {
   border-bottom: 1px solid var(--line);
-  font-size: 12px;
+  font-size: 11.5px;
   letter-spacing: 0;
   line-height: 1.15;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   padding-bottom: 2px;
   text-transform: uppercase;
 }
@@ -137,12 +138,12 @@ section > p,
 .item p,
 li,
 dd {
-  font-size: 10.5px;
+  font-size: 10.1px;
 }
 
 .skills {
   display: grid;
-  gap: 2px;
+  gap: 1px;
 }
 
 .skills div {
@@ -152,7 +153,7 @@ dd {
 }
 
 dt {
-  font-size: 10.5px;
+  font-size: 10.1px;
   font-weight: 700;
 }
 
@@ -161,7 +162,7 @@ dd {
 }
 
 .item + .item {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .item__heading {
@@ -172,19 +173,19 @@ dd {
 }
 
 h3 {
-  font-size: 11.25px;
+  font-size: 10.8px;
   font-weight: 700;
 }
 
 time {
   color: var(--muted);
   flex: 0 0 auto;
-  font-size: 10.25px;
+  font-size: 9.8px;
 }
 
 ul {
   margin-top: 2px;
-  padding-left: 17px;
+  padding-left: 16px;
 }
 
 li {
@@ -214,15 +215,25 @@ li {
 }
 
 @page {
-  margin: 9mm;
+  margin: 8mm 9mm;
   size: A4;
 }
 
 @media print {
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
   html,
   body {
     background: #fff;
     height: auto;
+  }
+
+  html {
+    font-size: 10.25px;
+    line-height: 1.2;
   }
 
   .toolbar {
@@ -242,11 +253,12 @@ li {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .title {
-    font-size: 12.5px;
+    font-size: 11.25px;
+    margin-top: 3px;
   }
 
   .contact,
@@ -255,32 +267,51 @@ li {
   li,
   dd,
   dt {
-    font-size: 9.25px;
-  }
-
-  h2 {
-    font-size: 10.75px;
-    margin-bottom: 3px;
-  }
-
-  h3 {
-    font-size: 10px;
-  }
-
-  time {
     font-size: 9px;
   }
 
-  section {
-    break-inside: avoid;
-    margin-top: 6px;
+  h2 {
+    font-size: 10px;
+    margin-bottom: 2px;
+    padding-bottom: 1px;
   }
 
+  h3 {
+    font-size: 9.7px;
+  }
+
+  time {
+    font-size: 8.8px;
+  }
+
+  section {
+    margin-top: 4.5px;
+  }
+
+  .resume__header,
   .item {
     break-inside: avoid;
   }
 
+  .resume__header {
+    margin-bottom: 5px;
+    padding-bottom: 4px;
+  }
+
+  .skills {
+    gap: 0;
+  }
+
+  .skills div {
+    grid-template-columns: 62px 1fr;
+  }
+
   ul {
-    padding-left: 14px;
+    margin-top: 1px;
+    padding-left: 12px;
+  }
+
+  li {
+    margin-top: 0;
   }
 }
