@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Resume of Chinnakrit Sripan, Full-stack Developer."
+      content="Resume of Chinnakrit Sripan, selectable by target role."
     />
-    <title>Chinnakrit Sripan Resume</title>
+    <title>Chinnakrit Sripan Resume - Full-stack Developer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,14 +16,23 @@
         <a href="https://chinnakrit.dev" target="_blank" rel="noopener noreferrer">Portfolio</a>
         <a href="https://github.com/Manchinn" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://manchinn.github.io" target="_blank" rel="noopener noreferrer">Navigator</a>
-        <button type="button" onclick="window.print()">Print / Save PDF</button>
+        <label class="role-picker" for="role-select">
+          <span>Target role</span>
+          <select id="role-select" aria-label="Select target resume role">
+            <option value="fullstack">Full-stack Developer</option>
+            <option value="frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="ai-automation">AI Automation &amp; Full-stack Systems Builder</option>
+          </select>
+        </label>
+        <button type="button" id="print-resume">Print / Save PDF</button>
       </div>
     </nav>
 
     <main class="resume" aria-label="Resume">
       <header class="resume__header">
         <h1>CHINNAKRIT SRIPAN</h1>
-        <p class="title">Full-stack Developer</p>
+        <p class="title" data-role-title>Full-stack Developer</p>
         <address class="contact" aria-label="Contact information">
           <a href="mailto:chinnakrit.srp@gmail.com">chinnakrit.srp@gmail.com</a>
           <span aria-hidden="true">|</span>
@@ -122,7 +131,7 @@
       <section aria-labelledby="miscellaneous">
         <h2 id="miscellaneous">Miscellaneous</h2>
         <p>
-          Junior full-stack developer with hands-on experience building and deploying real web
+          <span data-role-summary-prefix>Junior full-stack developer</span> with hands-on experience building and deploying real web
           applications using React.js, Next.js, Node.js, Express, and relational databases.
           Experienced in API integration, database-backed dashboards, authentication workflows,
           and practical product delivery. Able to communicate progress clearly, learn quickly,
@@ -154,8 +163,94 @@
             <dd>Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench</dd>
           </div>
         </dl>
-        <p>Available for junior full-stack, part-time, freelance, and contract roles.</p>
+        <p data-role-availability>Available for junior full-stack, part-time, freelance, and contract roles.</p>
       </section>
     </main>
+    <script>
+      (function () {
+        var roles = {
+          fullstack: {
+            title: "Full-stack Developer",
+            summaryPrefix: "Junior full-stack developer",
+            availability:
+              "Available for junior full-stack, part-time, freelance, and contract roles.",
+          },
+          frontend: {
+            title: "Frontend Developer",
+            summaryPrefix: "Junior frontend developer",
+            availability:
+              "Available for junior frontend, web UI, part-time, freelance, and contract roles.",
+          },
+          backend: {
+            title: "Backend Developer",
+            summaryPrefix: "Junior backend developer",
+            availability:
+              "Available for junior backend, API, database, part-time, freelance, and contract roles.",
+          },
+          "ai-automation": {
+            title: "AI Automation & Full-stack Systems Builder",
+            summaryPrefix: "AI automation and full-stack systems builder",
+            availability:
+              "Available for AI automation, internal tools, junior full-stack, freelance, and contract roles.",
+          },
+        };
+
+        var roleSelect = document.getElementById("role-select");
+        var roleTitle = document.querySelector("[data-role-title]");
+        var summaryPrefix = document.querySelector("[data-role-summary-prefix]");
+        var availability = document.querySelector("[data-role-availability]");
+        var printButton = document.getElementById("print-resume");
+        var storageKey = "manchinn-resume-role";
+
+        function getSavedRole() {
+          try {
+            return window.localStorage.getItem(storageKey);
+          } catch (error) {
+            return null;
+          }
+        }
+
+        function saveRole(roleKey) {
+          try {
+            window.localStorage.setItem(storageKey, roleKey);
+          } catch (error) {
+            return;
+          }
+        }
+
+        function getRoleFromUrl() {
+          var params = new URLSearchParams(window.location.search);
+          return params.get("role");
+        }
+
+        function setRole(roleKey, shouldPersist) {
+          var role = roles[roleKey] || roles.fullstack;
+
+          roleSelect.value = roles[roleKey] ? roleKey : "fullstack";
+          roleTitle.textContent = role.title;
+          summaryPrefix.textContent = role.summaryPrefix;
+          availability.textContent = role.availability;
+          document.title = "Chinnakrit Sripan Resume - " + role.title;
+
+          if (shouldPersist) {
+            saveRole(roleSelect.value);
+            var url = new URL(window.location.href);
+            url.searchParams.set("role", roleSelect.value);
+            window.history.replaceState({}, "", url);
+          }
+        }
+
+        roleSelect.addEventListener("change", function () {
+          setRole(roleSelect.value, true);
+        });
+
+        printButton.addEventListener("click", function () {
+          setRole(roleSelect.value, true);
+          window.print();
+        });
+
+        setRole(getRoleFromUrl() || getSavedRole() || "fullstack", false);
+      })();
+    </script>
   </body>
 </html>

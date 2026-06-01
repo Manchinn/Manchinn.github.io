@@ -54,7 +54,8 @@ a:focus-visible {
 }
 
 .toolbar a,
-.toolbar button {
+.toolbar button,
+.toolbar select {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 4px;
@@ -68,6 +69,28 @@ a:focus-visible {
 .toolbar button {
   background: #fff;
   color: #111827;
+}
+
+.role-picker {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.role-picker span {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.toolbar select {
+  background: #111827;
+  min-width: 230px;
+}
+
+.toolbar select:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 .resume {
@@ -246,6 +269,20 @@ li {
 
   .contact > * {
     white-space: normal;
+  }
+
+  .role-picker {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .role-picker span {
+    flex: 0 0 auto;
+  }
+
+  .toolbar select {
+    min-width: 0;
+    width: min(100%, 260px);
   }
 }
 
