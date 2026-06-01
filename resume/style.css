@@ -157,18 +157,26 @@ dd {
 }
 
 .skills div {
+  align-items: baseline;
   display: grid;
-  gap: 16px;
+  column-gap: 8px;
   grid-template-columns: 110px 1fr;
 }
 
 dt {
   font-size: 1rem;
   font-weight: 700;
+  white-space: nowrap;
+}
+
+dt::after {
+  content: ":";
 }
 
 dd {
   color: var(--muted);
+  margin: 0;
+  min-width: 0;
 }
 
 .item + .item {
@@ -361,7 +369,8 @@ li {
   }
 
   .skills div {
-    grid-template-columns: 62px 1fr;
+    column-gap: 5px;
+    grid-template-columns: 68px 1fr;
   }
 
   ul {
