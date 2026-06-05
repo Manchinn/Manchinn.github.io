@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0a0e12">
+    <meta name="theme-color" content="#0c1014">
     <meta
       name="description"
       content="Manchinn is the public link hub for Chinnakrit Sripan: portfolio, resume, GitHub, and LinkedIn."
@@ -19,122 +19,52 @@
     <title>Manchinn</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://github.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <!-- Dossier frame: viewport border + corner registration ticks -->
-    <div class="frame" aria-hidden="true">
-      <span class="frame-edge frame-edge--left">INDEX / LINK&nbsp;HUB</span>
-      <span class="frame-edge frame-edge--right">CHINNAKRIT&nbsp;SRIPAN / 2025</span>
-    </div>
-
     <header class="topbar">
-      <a class="brand" href="/" aria-label="Manchinn home">MANCHINN</a>
-      <span class="sys" aria-hidden="true">
-        <span class="dot"></span>
-        <span>READY</span>
-        <span class="sys-sep">·</span>
-        <time class="clock" data-clock>--:--:-- GMT+7</time>
-      </span>
+      <a class="brand" href="/" aria-label="Manchinn home">Manchinn</a>
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <p class="idline reveal">
-          <span class="slash" aria-hidden="true">//</span>
-          <span>Chinnakrit Sripan</span>
-          <span class="sep" aria-hidden="true">—</span>
-          <span class="role">AI automation &amp; full-stack systems</span>
-          <span class="caret" aria-hidden="true"></span>
-        </p>
-
-        <div class="avatar-module reveal">
-          <span class="ticks" aria-hidden="true"></span>
-          <span class="avatar-tag" aria-hidden="true">OPR&middot;01</span>
-          <span class="avatar-wrap">
-            <img
-              class="avatar"
-              src="https://github.com/Manchinn.png?size=240"
-              alt="Manchinn GitHub avatar"
-              width="120"
-              height="120"
-              decoding="async"
-            >
-            <span class="avatar-fallback" hidden>MC</span>
-          </span>
+      <section class="hero reveal" aria-labelledby="hero-title">
+        <div class="avatar-wrap">
+          <img
+            class="avatar"
+            src="https://github.com/Manchinn.png?size=240"
+            alt="Manchinn GitHub avatar"
+            width="120"
+            height="120"
+            decoding="async"
+          >
+          <span class="avatar-fallback" hidden>MC</span>
         </div>
 
-        <h1 id="hero-title" class="wordmark reveal">Manchinn</h1>
+        <p class="kicker">Chinnakrit Sripan</p>
+        <h1 id="hero-title">Manchinn</h1>
+        <p class="lede">
+          Public links for portfolio, resume, GitHub, and LinkedIn.
+        </p>
 
-        <p class="lede reveal">Public links — portfolio, resume, GitHub, LinkedIn.</p>
-
-        <nav class="links" aria-label="Featured links">
+        <div class="hero-actions" aria-label="Featured links">
+          <a class="button primary" href="https://chinnakrit.dev" target="_blank" rel="noreferrer">Portfolio</a>
+          <a class="button" href="/resume/">Resume</a>
+          <a class="button" href="https://github.com/Manchinn" target="_blank" rel="noreferrer">GitHub</a>
           <a
-            class="link link--primary reveal"
-            href="https://chinnakrit.dev"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="link-idx" aria-hidden="true">01</span>
-            <span class="link-body">
-              <span class="link-label">Portfolio</span>
-              <span class="link-host">chinnakrit.dev</span>
-            </span>
-            <span class="link-arrow" aria-hidden="true">&#8599;</span>
-          </a>
-
-          <a class="link reveal" href="/resume/">
-            <span class="link-idx" aria-hidden="true">02</span>
-            <span class="link-body">
-              <span class="link-label">Resume</span>
-              <span class="link-host">/resume</span>
-            </span>
-            <span class="link-arrow" aria-hidden="true">&#8594;</span>
-          </a>
-
-          <a
-            class="link reveal"
-            href="https://github.com/Manchinn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="link-idx" aria-hidden="true">03</span>
-            <span class="link-body">
-              <span class="link-label">GitHub</span>
-              <span class="link-host">github.com/Manchinn</span>
-            </span>
-            <span class="link-arrow" aria-hidden="true">&#8599;</span>
-          </a>
-
-          <a
-            class="link reveal"
+            class="button"
             href="https://www.linkedin.com/in/chinnakrit-sripan-4674a436a/"
             target="_blank"
             rel="noreferrer"
           >
-            <span class="link-idx" aria-hidden="true">04</span>
-            <span class="link-body">
-              <span class="link-label">LinkedIn</span>
-              <span class="link-host">in/chinnakrit-sripan</span>
-            </span>
-            <span class="link-arrow" aria-hidden="true">&#8599;</span>
+            LinkedIn
           </a>
-        </nav>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <span class="f-item">Bangkok, TH</span>
-      <span class="f-item f-item--avail">
-        <span class="dot"></span>
-        Available for work
-      </span>
+      <span>Manchinn</span>
+      <span>AI automation and full-stack systems.</span>
     </footer>
 
     <script src="script.js"></script>

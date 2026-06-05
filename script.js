@@ -1,7 +1,7 @@
 (function () {
-  // Swap to text fallback if the GitHub avatar fails to load.
   var avatar = document.querySelector(".avatar");
   var fallback = document.querySelector(".avatar-fallback");
+  var revealItems = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
 
   if (avatar && fallback) {
     avatar.addEventListener("error", function () {
@@ -10,29 +10,26 @@
     });
   }
 
-  // Live Bangkok time (GMT+7) in the status bar — purely cosmetic.
-  var clock = document.querySelector("[data-clock]");
-
-  if (clock) {
-    var formatter;
-    try {
-      formatter = new Intl.DateTimeFormat("en-GB", {
-        timeZone: "Asia/Bangkok",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false,
-      });
-    } catch (error) {
-      formatter = null;
-    }
-
-    if (formatter) {
-      var tick = function () {
-        clock.textContent = formatter.format(new Date()) + " GMT+7";
-      };
-      tick();
-      window.setInterval(tick, 1000);
-    }
+  if (!("IntersectionObserver" in window)) {
+    revealItems.forEach(function (item) {
+      item.classList.add("is-visible");
+    });
+    return;
   }
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16 }
+  );
+
+  revealItems.forEach(function (item) {
+    observer.observe(item);
+  });
 })();
