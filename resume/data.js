@@ -46,10 +46,6 @@
           "Developed use cases, ER diagram, activity diagram, sequence diagram, and state diagram during the early stage of the project.",
         "reservation-3":
           "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
-        "additional-1":
-          "Studying AI-assisted development workflows for ERP, internal tools, and organization-level operations.",
-        "additional-2":
-          "Built prompt workflows for coding, repository analysis, automation tasks, and process efficiency.",
       },
     },
     frontend: {
@@ -98,10 +94,6 @@
           "Prepared use cases and diagrams to clarify user flows, page behavior, and reservation states.",
         "reservation-3":
           "Built reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
-        "additional-1":
-          "Studying AI-assisted frontend workflows for ERP, internal tools, and organization-level operations.",
-        "additional-2":
-          "Built prompt workflows for UI coding, repository analysis, automation tasks, and process efficiency.",
       },
     },
     backend: {
@@ -150,10 +142,6 @@
           "Designed use cases, ER diagram, activity diagram, sequence diagram, and state diagram during the early stage of the project.",
         "reservation-3":
           "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
-        "additional-1":
-          "Studying AI-assisted backend workflows for ERP, internal tools, and organization-level operations.",
-        "additional-2":
-          "Built prompt workflows for coding, repository analysis, automation tasks, and process efficiency.",
       },
     },
     "software-engineer": {
@@ -202,10 +190,6 @@
           "Prepared use cases and diagrams to clarify requirements, data flow, and user behavior.",
         "reservation-3":
           "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
-        "additional-1":
-          "Studying AI-assisted software workflows for ERP, internal tools, and organization-level operations.",
-        "additional-2":
-          "Built prompt workflows for coding, repository analysis, automation tasks, and process efficiency.",
       },
     },
     "software-tester": {
@@ -254,10 +238,6 @@
           "Prepared use cases, ER diagram, activity diagram, sequence diagram, and state diagram for requirement analysis.",
         "reservation-3":
           "Built and reviewed reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
-        "additional-1":
-          "Studying AI-assisted testing workflows for ERP, internal tools, and organization-level operations.",
-        "additional-2":
-          "Built prompt workflows for repository analysis, test ideas, automation tasks, and process efficiency.",
       },
     },
     "system-engineer": {
@@ -306,10 +286,6 @@
           "Prepared use cases and diagrams to clarify workflow, data structure, and system states.",
         "reservation-3":
           "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
-        "additional-1":
-          "Studying AI-assisted development and operations workflows for ERP, internal tools, and organization-level operations.",
-        "additional-2":
-          "Built prompt workflows for repository analysis, automation, delivery support, and process efficiency.",
       },
     },
     "ai-engagement": {
@@ -358,10 +334,6 @@
           "Prepared use cases and diagrams to communicate requirements, workflows, and system behavior.",
         "reservation-3":
           "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
-        "additional-1":
-          "Studying AI-assisted development workflows for ERP, internal tools, and organization-level operations.",
-        "additional-2":
-          "Built prompt workflows for coding, repository analysis, automation, development support, and process efficiency.",
       },
     },
   };
