@@ -194,50 +194,50 @@
     },
     "software-tester": {
       title: "Software Tester",
-      summaryPrefix: "Junior software tester",
+      summaryPrefix: "Junior software tester candidate",
       summaryBody:
-        "with hands-on experience understanding web application workflows, API-connected features, dashboards, authentication screens, and user-facing behavior. Experienced in requirement analysis, use cases, diagrams, data validation, issue communication, and practical product delivery.",
+        "with a full-stack development background and hands-on involvement in requirement analysis, manual testing, test scenario design, API checks with Postman, and pre-deployment validation for real web applications. Interested in growing seriously in Software QA and Software Testing.",
       availability:
-        "Available for junior software tester, QA, UAT support, part-time, freelance, and contract roles.",
+        "Available for junior software tester, QA, manual testing, UAT support, part-time, freelance, and contract roles.",
       skills: {
         frontend:
-          "React.js, Next.js, HTML, CSS, UI behavior review, responsive screen checks",
+          "Manual UI testing, web workflow validation, responsive screen checks, React.js/Next.js awareness",
         backend:
-          "REST API testing basics, Postman, JWT Authentication flow checks, API integration review",
+          "Postman, REST API testing basics, JWT flow checks, frontend/backend integration validation",
         database:
-          "MySQL, SQL Queries, test data checks, ER Diagram, relational database basics",
+          "MySQL, SQL Queries, test data checks, ER Diagram, requirement/data flow analysis",
         devops: "GitHub, GitHub Actions awareness, deployment smoke checks, Linux VPS basics",
         aiTools:
-          "Claude Code, Codex CLI, Gemini CLI, test ideas, issue review, repository analysis",
-        tools: "Postman, Git, GitHub, VS Code, Cursor, MySQL Workbench",
+          "AI-assisted requirement analysis, test case ideas, scenario generation, issue review",
+        tools: "Postman, Git, GitHub, VS Code, Cursor, MySQL Workbench, Excel/Google Sheets",
       },
       copy: {
         "atiz-1":
-          "Reviewed web application features across frontend behavior, API integration, and user workflows.",
+          "Participated in frontend implementation while validating web application behavior, API integration, and user workflows.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into validation scenarios for delivery.",
+          "Translated stakeholder requirements and UX/UI design handoff into practical test scenarios and delivery checks.",
         "experience-1":
-          "Collaborated with the development team on GetX, a business management platform.",
+          "Collaborated with the development team on GetX, a business management platform, and reviewed feature behavior during delivery.",
         "experience-2":
-          "Checked dashboard data needs and supported validation through database queries.",
+          "Validated dashboard data behavior by checking database queries, expected outputs, and display results.",
         "experience-3":
-          "Reviewed frontend and backend data connections for API-based display behavior.",
+          "Checked frontend/backend data connections and API-based display behavior before handoff.",
         "experience-4":
-          "Practiced team communication, requirement clarification, and task delivery in a development environment.",
+          "Practiced requirement clarification, issue communication, and task delivery within an SDLC-style workflow.",
         "cslogbook-1":
-          "Built and reviewed web application workflows for internship tracking, project tracking, user management, and activity logging.",
+          "Designed and manually tested web application workflows for internship tracking, project tracking, user management, and activity logging.",
         "cslogbook-2":
-          "Worked through authentication, progress tracking, activity logs, analytics, reporting, API integration, and role-based workflows.",
+          "Created practical test scenarios for authentication, progress tracking, activity logs, analytics, reporting, API integration, and role-based workflows.",
         "cslogbook-3":
-          "Supported deployment awareness across Docker, Nginx, SSL, VPS, and GitHub Actions.",
+          "Validated frontend/backend integration and performed pre-deployment checks across Docker, Nginx, SSL, VPS, and GitHub Actions.",
         "tradebot-1":
-          "Developed a Python-based trading bot concept with MT4 API execution and a web monitoring interface for behavior review.",
+          "Developed and reviewed a Python-based trading bot concept with MT4 API execution and a web monitoring interface.",
         "reservation-1":
-          "Developed reservation website workflows and checked scheduling behavior for sports court bookings.",
+          "Designed and manually tested reservation website workflows for sports court booking scenarios.",
         "reservation-2":
-          "Prepared use cases, ER diagram, activity diagram, sequence diagram, and state diagram for requirement analysis.",
+          "Prepared use cases, ER diagram, activity diagram, sequence diagram, and state diagram to support requirement and scenario analysis.",
         "reservation-3":
-          "Built and reviewed reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
+          "Investigated workflow issues and verified reservation behavior across ReactJS, NodeJS, and ExpressJS features.",
       },
     },
     "system-engineer": {
