@@ -181,12 +181,12 @@ dd {
 
 .skills div {
   align-items: baseline;
-  display: grid;
+  display: flex;
   column-gap: 8px;
-  grid-template-columns: 110px 1fr;
 }
 
 dt {
+  flex: 0 0 auto;
   font-size: 1rem;
   font-weight: 700;
   white-space: nowrap;
@@ -198,6 +198,7 @@ dt::after {
 
 dd {
   color: var(--muted);
+  flex: 1 1 auto;
   margin: 0;
   min-width: 0;
 }
@@ -407,7 +408,6 @@ li {
 
   .skills div {
     column-gap: 5px;
-    grid-template-columns: 68px 1fr;
   }
 
   ul {
