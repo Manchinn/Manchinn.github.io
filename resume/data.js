@@ -15,10 +15,15 @@
         database:
           "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
         devops: "Docker, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
-        aiTools: "Claude Code, Codex CLI, Gemini CLI, OpenAI-compatible APIs",
+        aiTools:
+          "Claude Code, Codex CLI, Gemini CLI, project setup, repository analysis, prompt workflows, OpenAI-compatible API usage",
         tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
       },
       copy: {
+        "atiz-1":
+          "Developed web application features across frontend implementation and API integration.",
+        "atiz-2":
+          "Translated stakeholder requirements and UX/UI design handoff into practical web application workflows.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -62,10 +67,15 @@
         database:
           "MySQL, SQL Queries, dashboard data usage, relational database basics",
         devops: "GitHub Actions, Nginx, Linux VPS, SSL, Docker basics",
-        aiTools: "Claude Code, Codex CLI, Gemini CLI for UI iteration and review",
+        aiTools:
+          "Claude Code, Codex CLI, Gemini CLI, UI iteration, repository analysis, prompt workflows",
         tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
       },
       copy: {
+        "atiz-1":
+          "Developed frontend web application features and connected them with API-driven data workflows.",
+        "atiz-2":
+          "Translated stakeholder requirements and UX/UI design handoff into responsive web application interfaces.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -109,10 +119,15 @@
         database:
           "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
         devops: "Docker, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
-        aiTools: "Claude Code, Codex CLI, Gemini CLI for backend analysis and automation",
+        aiTools:
+          "Claude Code, Codex CLI, Gemini CLI, backend analysis, automation prompts, repository review",
         tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
       },
       copy: {
+        "atiz-1":
+          "Developed web application features with API integration and backend-connected data workflows.",
+        "atiz-2":
+          "Translated stakeholder requirements and UX/UI design handoff into API-backed application workflows.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -156,10 +171,15 @@
         database:
           "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
         devops: "Docker, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
-        aiTools: "Claude Code, Codex CLI, Gemini CLI for coding and review",
+        aiTools:
+          "Claude Code, Codex CLI, Gemini CLI, project setup, coding review, repository analysis",
         tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
       },
       copy: {
+        "atiz-1":
+          "Developed web application features across frontend implementation and API integration.",
+        "atiz-2":
+          "Translated stakeholder requirements and UX/UI design handoff into practical web application workflows.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -203,10 +223,15 @@
         database:
           "MySQL, SQL Queries, test data checks, ER Diagram, relational database basics",
         devops: "GitHub, GitHub Actions awareness, deployment smoke checks, Linux VPS basics",
-        aiTools: "Claude Code, Codex CLI, Gemini CLI for test ideas and review",
+        aiTools:
+          "Claude Code, Codex CLI, Gemini CLI, test ideas, issue review, repository analysis",
         tools: "Postman, Git, GitHub, VS Code, Cursor, MySQL Workbench",
       },
       copy: {
+        "atiz-1":
+          "Reviewed web application features across frontend behavior, API integration, and user workflows.",
+        "atiz-2":
+          "Translated stakeholder requirements and UX/UI design handoff into validation scenarios for delivery.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -250,10 +275,15 @@
         database:
           "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
         devops: "Linux VPS, Nginx, Docker, SSL, GitHub Actions, CI/CD, deployment support",
-        aiTools: "Claude Code, Codex CLI, Gemini CLI for ops analysis and automation",
+        aiTools:
+          "Claude Code, Codex CLI, Gemini CLI, ops analysis, automation prompts, repository review",
         tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
       },
       copy: {
+        "atiz-1":
+          "Developed web application features with API integration and deployment-aware implementation.",
+        "atiz-2":
+          "Translated stakeholder requirements and UX/UI design handoff into system-aware application workflows.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -297,10 +327,15 @@
         database:
           "MySQL, SQL Queries, Database Design, ER Diagram, dashboard data workflows",
         devops: "GitHub Actions, Docker, Nginx, Linux VPS, SSL, deployment awareness",
-        aiTools: "Claude Code, Codex CLI, Gemini CLI, prompt workflows, AI-assisted review",
+        aiTools:
+          "Claude Code, Codex CLI, Gemini CLI, prompt workflows, AI-assisted review, project setup",
         tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
       },
       copy: {
+        "atiz-1":
+          "Developed web application features while connecting stakeholder needs, API workflows, and delivery tasks.",
+        "atiz-2":
+          "Translated stakeholder requirements and UX/UI design handoff into practical workflows for implementation.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
