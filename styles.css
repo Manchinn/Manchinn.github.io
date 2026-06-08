@@ -24,13 +24,31 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-sans);
-  background-color: var(--bg);
   color: var(--text);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  background:
+    linear-gradient(180deg, rgba(9, 9, 11, 0.85), var(--bg) 68%),
+    repeating-linear-gradient(90deg, rgba(250, 250, 250, 0.015) 0 1px, transparent 1px 84px),
+    var(--bg);
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, transparent 0 38%, rgba(250, 250, 250, 0.02) 48%, transparent 58%),
+    linear-gradient(35deg, transparent 0 45%, rgba(161, 161, 170, 0.02) 54%, transparent 64%);
+  background-size: 220% 220%;
+  content: "";
+  opacity: 0.8;
+  animation: slow-shift 18s ease-in-out infinite alternate;
 }
 
 a {
@@ -163,6 +181,15 @@ h1 {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes slow-shift {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
