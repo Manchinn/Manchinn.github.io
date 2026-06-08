@@ -107,6 +107,10 @@ a:focus-visible {
   text-align: center;
 }
 
+.resume__photo {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -427,44 +431,70 @@ li {
 .resume--harvard .resume__header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: center;
   text-align: left;
+  gap: 28px;
   border-bottom: 2px solid var(--line);
-  padding-bottom: 12px;
+  padding-bottom: 16px;
   margin-bottom: 24px;
+}
+
+.resume--harvard .resume__photo {
+  display: block;
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.resume--harvard .resume__header-info {
+  flex-grow: 1;
 }
 
 .resume--harvard .contact {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  margin-top: 0;
-  gap: 2px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  margin-top: 8px;
+  gap: 4px 10px;
 }
 
 .resume--harvard .contact span {
-  display: none;
+  display: inline;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .resume--harvard .resume__header {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
     border-bottom-width: 1px;
   }
   .resume--harvard .contact {
-    align-items: flex-start;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
   }
 }
 
 @media print {
   .resume--harvard .resume__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
     border-bottom-width: 1.5pt;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     margin-bottom: 14px;
+  }
+  .resume--harvard .resume__photo {
+    display: block;
+    width: 80px;
+    height: 96px;
   }
 }
