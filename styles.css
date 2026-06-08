@@ -1,17 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
   color-scheme: dark;
-  --bg: #0c1014;
-  --text: #f4f1e8;
-  --muted: #aeb7bd;
-  --faint: #6f7b82;
-  --line: rgba(244, 241, 232, 0.14);
-  --accent: #72f0ae;
-  --accent-2: #70c7ff;
-  --shadow: 0 22px 70px rgba(0, 0, 0, 0.34);
-  --radius: 8px;
-  font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  --bg: #09090b;
+  --text: #fafafa;
+  --muted: #a1a1aa;
+  --faint: #3f3f46;
+  --line: #27272a;
+  --accent: #ffffff;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 * {
@@ -24,28 +21,16 @@ html {
 }
 
 body {
-  min-height: 100vh;
   margin: 0;
-  overflow-x: hidden;
-  background:
-    linear-gradient(180deg, rgba(12, 16, 20, 0.8), var(--bg) 68%),
-    repeating-linear-gradient(90deg, rgba(244, 241, 232, 0.035) 0 1px, transparent 1px 84px),
-    var(--bg);
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: var(--bg);
   color: var(--text);
-}
-
-body::before {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    linear-gradient(115deg, transparent 0 38%, rgba(112, 199, 255, 0.08) 48%, transparent 58%),
-    linear-gradient(35deg, transparent 0 45%, rgba(114, 240, 174, 0.08) 54%, transparent 64%);
-  background-size: 220% 220%;
-  content: "";
-  opacity: 0.7;
-  animation: slow-shift 18s ease-in-out infinite alternate;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -62,194 +47,122 @@ img {
   display: none !important;
 }
 
-.topbar,
-main,
-.footer {
-  width: min(980px, calc(100% - 32px));
-  margin: 0 auto;
-}
-
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  padding: 18px 0;
-  backdrop-filter: blur(16px);
-}
-
-.brand {
-  font-size: 1rem;
-  font-weight: 850;
-  letter-spacing: 0;
+main {
+  width: 100%;
+  max-width: 440px;
+  padding: 60px 24px;
 }
 
 .hero {
-  display: grid;
-  justify-items: center;
-  min-height: 620px;
-  align-content: center;
-  padding: 72px 0 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .avatar-wrap {
-  display: grid;
-  width: 132px;
-  height: 132px;
-  place-items: center;
-  margin-bottom: 24px;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(244, 241, 232, 0.05);
-  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+  background-color: var(--line);
 }
 
 .avatar,
 .avatar-fallback {
-  width: 112px;
-  height: 112px;
-  border-radius: 7px;
-}
-
-.avatar {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .avatar-fallback {
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #081015;
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-.kicker,
-h1,
-p {
-  margin-top: 0;
+  background: var(--line);
+  color: var(--muted);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .kicker {
-  margin-bottom: 12px;
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 850;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 0 0 8px 0;
+  letter-spacing: 0.02em;
 }
 
 h1 {
-  max-width: 720px;
-  margin-bottom: 18px;
-  font-size: 4.8rem;
-  line-height: 0.98;
-  letter-spacing: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 12px 0;
+  letter-spacing: -0.02em;
 }
 
 .lede {
-  max-width: 660px;
-  margin-bottom: 30px;
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: var(--muted);
-  font-size: 1.12rem;
-  line-height: 1.7;
+  margin: 0 0 32px 0;
 }
 
 .hero-actions {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
 }
 
 .button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
-  padding: 12px 16px;
+  height: 48px;
+  border-radius: 8px;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(244, 241, 232, 0.06);
+  background-color: #18181b;
   color: var(--text);
-  font-weight: 800;
-  transition:
-    border-color 160ms ease,
-    background-color 160ms ease,
-    transform 160ms ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 150ms ease;
 }
 
 .button:hover {
-  border-color: rgba(112, 199, 255, 0.46);
-  background: rgba(112, 199, 255, 0.1);
-  transform: translateY(-2px);
+  background-color: #27272a;
+  border-color: #3f3f46;
 }
 
 .button.primary {
-  border-color: rgba(114, 240, 174, 0.5);
-  background: var(--accent);
-  color: #081015;
+  background-color: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+.button.primary:hover {
+  background-color: #e4e4e7;
+  border-color: #e4e4e7;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 24px 0 34px;
+  margin-top: 48px;
+  font-size: 0.8rem;
   color: var(--faint);
-  font-size: 0.9rem;
+  text-align: center;
 }
 
+/* Animations */
 .reveal {
   opacity: 0;
-  transform: translateY(14px);
-  transition:
-    opacity 520ms ease,
-    transform 520ms ease;
+  transform: translateY(10px);
+  transition: opacity 600ms ease, transform 600ms ease;
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-@keyframes slow-shift {
-  from {
-    background-position: 0% 0%;
-  }
-
-  to {
-    background-position: 100% 100%;
-  }
-}
-
-@media (max-width: 700px) {
-  .hero {
-    min-height: auto;
-    padding: 52px 0 72px;
-  }
-
-  h1 {
-    font-size: 3.3rem;
-  }
-
-  .lede {
-    font-size: 1.02rem;
-  }
-
-  .footer {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 430px) {
-  .hero-actions .button {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 2.8rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
