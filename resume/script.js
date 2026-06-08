@@ -1,13 +1,17 @@
 (function () {
   var roles = window.resumeRoles || {};
   var defaultRole = "fullstack";
+  var defaultTemplate = "standard";
   var roleSelect = document.getElementById("role-select");
+  var templateSelect = document.getElementById("template-select");
+  var resumeElement = document.querySelector(".resume");
   var roleTitle = document.querySelector("[data-role-title]");
   var summaryPrefix = document.querySelector("[data-role-summary-prefix]");
   var summaryBody = document.querySelector("[data-role-summary-body]");
   var availability = document.querySelector("[data-role-availability]");
   var printButton = document.getElementById("print-resume");
   var storageKey = "manchinn-resume-role";
+  var templateStorageKey = "manchinn-resume-template";
 
   function getSavedRole() {
     try {
@@ -25,14 +29,36 @@
     }
   }
 
-  function getRoleFromUrl() {
-    var params = new URLSearchParams(window.location.search);
-    return params.get("role");
+  function getSavedTemplate() {
+    try {
+      return window.localStorage.getItem(templateStorageKey);
+    } catch (error) {
+      return null;
+    }
   }
 
-  function updateUrl(roleKey) {
+  function saveTemplate(templateKey) {
+    try {
+      window.localStorage.setItem(templateStorageKey, templateKey);
+    } catch (error) {
+      return;
+    }
+  }
+
+  var getRoleFromUrl = function () {
+    var params = new URLSearchParams(window.location.search);
+    return params.get("role");
+  };
+
+  var getTemplateFromUrl = function () {
+    var params = new URLSearchParams(window.location.search);
+    return params.get("template");
+  };
+
+  function updateUrl(roleKey, templateKey) {
     var url = new URL(window.location.href);
     url.searchParams.set("role", roleKey);
+    url.searchParams.set("template", templateKey);
     window.history.replaceState({}, "", url);
   }
 
@@ -76,7 +102,23 @@
 
     if (shouldPersist) {
       saveRole(selectedRoleKey);
-      updateUrl(selectedRoleKey);
+      updateUrl(selectedRoleKey, templateSelect.value);
+    }
+  }
+
+  function setTemplate(templateKey, shouldPersist) {
+    var selectedTemplate = (templateKey === "harvard") ? "harvard" : "standard";
+    templateSelect.value = selectedTemplate;
+
+    if (selectedTemplate === "harvard") {
+      resumeElement.classList.add("resume--harvard");
+    } else {
+      resumeElement.classList.remove("resume--harvard");
+    }
+
+    if (shouldPersist) {
+      saveTemplate(selectedTemplate);
+      updateUrl(roleSelect.value, selectedTemplate);
     }
   }
 
@@ -84,10 +126,18 @@
     setRole(roleSelect.value, true);
   });
 
+  templateSelect.addEventListener("change", function () {
+    setTemplate(templateSelect.value, true);
+  });
+
   printButton.addEventListener("click", function () {
     setRole(roleSelect.value, true);
+    setTemplate(templateSelect.value, true);
     window.print();
   });
 
-  setRole(getRoleFromUrl() || getSavedRole() || defaultRole, false);
+  var initRole = getRoleFromUrl() || getSavedRole() || defaultRole;
+  var initTemplate = getTemplateFromUrl() || getSavedTemplate() || defaultTemplate;
+  setRole(initRole, false);
+  setTemplate(initTemplate, false);
 })();
