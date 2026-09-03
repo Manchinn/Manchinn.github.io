@@ -325,8 +325,8 @@ li {
     background: #fff;
     box-shadow: none;
     margin: 0;
-    min-height: 297mm;
-    padding: 12mm 14mm;
+    min-height: 296mm;
+    padding: 10mm 13mm;
     width: 210mm;
   }
 
@@ -487,14 +487,14 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     border-bottom-width: 1.5pt;
-    padding-bottom: 8px;
-    margin-bottom: 14px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
   }
   .resume--harvard .resume__photo {
     display: block;
-    width: 80px;
-    height: 96px;
+    width: 68px;
+    height: 82px;
   }
 }

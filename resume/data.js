@@ -340,9 +340,9 @@
       title: "Event Service Desk / IT Support",
       summaryPrefix: "Computer Science graduate with hands-on IT operations experience",
       summaryBody:
-        "supporting live web applications end to end: taking in issue reports, reproducing and diagnosing problems, logging them, coordinating with the people who own the fix, and reporting status clearly. Comfortable with network and connectivity fundamentals (TCP/IP, DNS, HTTP/HTTPS, SSL, ports, Nginx, Linux VPS), SQL for data checks, and Excel-based daily reporting. Used to working to deadlines, staying calm on urgent issues, and communicating in Thai and English.",
+        "supporting live web applications end to end: taking in issue reports, reproducing and diagnosing problems, logging them, coordinating with the owner of the fix, and reporting status clearly. Comfortable with network and connectivity fundamentals, SQL for data checks, and Excel-based daily reporting. Used to deadlines, staying calm on urgent issues, and communicating in Thai and English.",
       availability:
-        "Available for event service desk, IT support, and operations support roles, including short-term contracts and consecutive on-site event days with full schedule commitment.",
+        "Available for event service desk, IT support, and operations support roles, including short-term contracts and consecutive on-site event days.",
       skillLabels: {
         frontend: "Service Desk",
         backend: "IT Support",
@@ -357,9 +357,9 @@
         backend:
           "Computer and application troubleshooting, account and access issues, software setup, log reading, root-cause isolation, reproducing user-reported problems",
         database:
-          "Network fundamentals: TCP/IP, DNS, DHCP basics, HTTP/HTTPS, ports and firewall checks, SSL/TLS certificates, Nginx reverse proxy, Linux VPS operations, internet and Wi-Fi connectivity troubleshooting",
+          "TCP/IP, DNS, DHCP, HTTP/HTTPS, ports and firewall checks, SSL/TLS certificates, Nginx reverse proxy, Linux VPS operations, internet and Wi-Fi troubleshooting",
         devops:
-          "Daily and post-event reports, Excel and Google Sheets (filters, pivot, charts), incident logs and statistics, SQL queries for data verification, workflow and SOP documentation",
+          "Daily and post-event reports, Excel and Google Sheets (filters, pivot, charts), incident logs and statistics, SQL for data verification, SOP documentation",
         aiTools:
           "Cross-team coordination, requirement clarification with stakeholders, task handoff, clear written updates in Thai and English, working with non-technical users",
         tools:
