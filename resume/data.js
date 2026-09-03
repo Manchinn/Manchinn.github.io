@@ -336,5 +336,63 @@
           "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
       },
     },
+    "service-desk": {
+      title: "Event Service Desk / IT Support",
+      summaryPrefix: "Computer Science graduate with hands-on IT operations experience",
+      summaryBody:
+        "supporting live web applications end to end: taking in issue reports, reproducing and diagnosing problems, logging them, coordinating with the people who own the fix, and reporting status clearly. Comfortable with network and connectivity fundamentals (TCP/IP, DNS, HTTP/HTTPS, SSL, ports, Nginx, Linux VPS), SQL for data checks, and Excel-based daily reporting. Used to working to deadlines, staying calm on urgent issues, and communicating in Thai and English.",
+      availability:
+        "Available for event service desk, IT support, and operations support roles, including short-term contracts and consecutive on-site event days with full schedule commitment.",
+      skillLabels: {
+        frontend: "Service Desk",
+        backend: "IT Support",
+        database: "Network & Connectivity",
+        devops: "Reporting & Documentation",
+        aiTools: "Coordination",
+        tools: "Tools",
+      },
+      skills: {
+        frontend:
+          "Issue intake, ticket logging, triage and priority assessment, escalation to the right team, follow-up to closure, status updates to requesters",
+        backend:
+          "Computer and application troubleshooting, account and access issues, software setup, log reading, root-cause isolation, reproducing user-reported problems",
+        database:
+          "Network fundamentals: TCP/IP, DNS, DHCP basics, HTTP/HTTPS, ports and firewall checks, SSL/TLS certificates, Nginx reverse proxy, Linux VPS operations, internet and Wi-Fi connectivity troubleshooting",
+        devops:
+          "Daily and post-event reports, Excel and Google Sheets (filters, pivot, charts), incident logs and statistics, SQL queries for data verification, workflow and SOP documentation",
+        aiTools:
+          "Cross-team coordination, requirement clarification with stakeholders, task handoff, clear written updates in Thai and English, working with non-technical users",
+        tools:
+          "Excel, Google Sheets, Word, Postman, Linux CLI, Docker, Git and GitHub, MySQL Workbench, LINE and Microsoft Teams",
+      },
+      copy: {
+        "atiz-1":
+          "Supported and maintained live web application features, investigating reported issues and driving them through to a working fix.",
+        "atiz-2":
+          "Clarified requirements with stakeholders and design handoff, then tracked each item to completion and reported progress.",
+        "experience-1":
+          "Worked alongside the development team on GetX, a business management platform, handling requests and questions from teammates during delivery.",
+        "experience-2":
+          "Produced data summaries from database queries for dashboard reporting, the same reporting discipline used for daily incident reports.",
+        "experience-3":
+          "Diagnosed data and connectivity problems between frontend and backend, and escalated to the right owner when the fix sat outside my scope.",
+        "experience-4":
+          "Practiced structured communication, issue reporting, and task handoff inside a team workflow.",
+        "cslogbook-1":
+          "Acted as the single point of contact for a system used by students and academic staff: received issue reports, reproduced them, logged them, and closed them out.",
+        "cslogbook-2":
+          "Built the activity logging, analytics, and reporting features of the system, including role-based access control, giving practical experience in how ticket and audit records are structured.",
+        "cslogbook-3":
+          "Deployed and operated the production environment on Linux VPS with Docker, Nginx, SSL, and GitHub Actions, troubleshooting DNS, certificate, port, and service-availability failures hands-on.",
+        "tradebot-1":
+          "Built and monitored an automated trading system with a web monitoring interface, watching a live process and reacting to abnormal behaviour.",
+        "reservation-1":
+          "Developed a shared-facility reservation website, coordinating booking rules and user-facing scheduling flows.",
+        "reservation-2":
+          "Documented use cases, ER diagram, activity diagram, sequence diagram, and state diagram, the same documentation skill applied to SOPs and process flows.",
+        "reservation-3":
+          "Built the reservation workflow end to end using ReactJS, NodeJS, and ExpressJS.",
+      },
+    },
   };
 })();

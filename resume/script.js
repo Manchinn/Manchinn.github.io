@@ -50,6 +50,14 @@
     return params.get("role");
   };
 
+  var defaultSkillLabels = {};
+  document
+    .querySelectorAll("[data-role-skill-label]")
+    .forEach(function (element) {
+      defaultSkillLabels[element.getAttribute("data-role-skill-label")] =
+        element.textContent;
+    });
+
   var getTemplateFromUrl = function () {
     var params = new URLSearchParams(window.location.search);
     return params.get("template");
@@ -76,6 +84,17 @@
     });
   }
 
+  function applySkillLabels(labels) {
+    document
+      .querySelectorAll("[data-role-skill-label]")
+      .forEach(function (element) {
+        var labelKey = element.getAttribute("data-role-skill-label");
+        var override = labels && labels[labelKey];
+
+        element.textContent = override || defaultSkillLabels[labelKey] || element.textContent;
+      });
+  }
+
   function applyCopy(copy) {
     document.querySelectorAll("[data-role-copy]").forEach(function (element) {
       var copyKey = element.getAttribute("data-role-copy");
@@ -98,6 +117,7 @@
     document.title = "Chinnakrit Sripan Resume - " + role.title;
 
     applySkills(role.skills);
+    applySkillLabels(role.skillLabels);
     applyCopy(role.copy);
 
     if (shouldPersist) {
