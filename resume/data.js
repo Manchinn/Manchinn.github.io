@@ -192,6 +192,54 @@
           "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
       },
     },
+    "software-development": {
+      title: "Software Development",
+      summaryPrefix: "Junior software developer",
+      summaryBody:
+        "with hands-on experience building full-stack web applications, API-connected features, database-backed dashboards, and production deployments. Experienced in React.js, Next.js, Node.js, Express, SQL, authentication workflows, and practical product delivery.",
+      availability:
+        "Available for software development, junior software engineer, full-stack, part-time, freelance, and contract roles.",
+      skills: {
+        frontend:
+          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Responsive UI",
+        backend:
+          "Node.js, Express, REST API, JWT Authentication, API Integration",
+        database:
+          "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
+        devops: "Docker, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
+        aiTools:
+          "Claude Code, Codex CLI, Gemini CLI, project setup, coding review, repository analysis",
+        tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
+      },
+      copy: {
+        "atiz-1":
+          "Developed web application features across frontend implementation and API integration.",
+        "atiz-2":
+          "Translated stakeholder requirements and UX/UI design handoff into practical web application workflows.",
+        "experience-1":
+          "Collaborated with the development team on GetX, a business management platform.",
+        "experience-2":
+          "Developed database queries and supported dashboard data requirements.",
+        "experience-3":
+          "Connected frontend interfaces with backend data sources and API-based workflows.",
+        "experience-4":
+          "Practiced software delivery workflow, communication, and task handoff in a team environment.",
+        "cslogbook-1":
+          "Built a web application for internship tracking, project tracking, user management, and activity logging.",
+        "cslogbook-2":
+          "Developed features for authentication, progress tracking, activity logs, analytics, reporting, relational database design, API integration, and role-based workflows.",
+        "cslogbook-3":
+          "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
+        "tradebot-1":
+          "Developed a Python-based trading bot concept for XAU/USD with MT4 API execution and a web monitoring interface.",
+        "reservation-1":
+          "Developed reservation workflows that allow users to schedule sports court bookings.",
+        "reservation-2":
+          "Prepared use cases and diagrams to clarify requirements, data flow, and user behavior.",
+        "reservation-3":
+          "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
+      },
+    },
     "software-tester": {
       title: "Software Tester",
       summaryPrefix: "Junior software tester candidate",
