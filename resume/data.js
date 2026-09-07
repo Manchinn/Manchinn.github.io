@@ -9,15 +9,16 @@
         "Available for junior full-stack, part-time, freelance, and contract roles.",
       skills: {
         frontend:
-          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Responsive UI, Ant Design",
+          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Responsive UI",
         backend:
           "Node.js, Express, REST API, JWT Authentication, API Integration",
         database:
-          "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
-        devops: "Docker, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
+          "MySQL, SQL Queries, Database Design, ER Diagram, PostgreSQL basics",
+        devops: "Docker, Docker Compose, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
         aiTools:
           "Claude Code, Codex CLI, Gemini CLI, project setup, repository analysis, prompt workflows, OpenAI-compatible API usage",
-        tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
+        tools:
+          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Vitest + Testing Library (basics)",
       },
       copy: {
         "atiz-1":
@@ -39,7 +40,7 @@
         "cslogbook-3":
           "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
         "tradebot-1":
-          "Developed a Python-based trading bot concept for XAU/USD with MT4 API-based execution and a web monitoring interface.",
+          "Developed a Python-based trading bot concept for XAU/USD with a web monitoring interface.",
         "reservation-1":
           "Developed a website for sports court reservations, allowing users to schedule their reservations.",
         "reservation-2":
@@ -57,15 +58,17 @@
         "Available for junior frontend, web UI, part-time, freelance, and contract roles.",
       skills: {
         frontend:
-          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Responsive UI, Ant Design, API-connected UI",
+          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Responsive UI, API-connected UI",
         backend:
           "Node.js, Express, REST API integration, JWT Authentication basics",
         database:
           "MySQL, SQL Queries, dashboard data usage, relational database basics",
-        devops: "GitHub Actions, Nginx, Linux VPS, SSL, Docker basics",
+        devops:
+          "GitHub Actions, Nginx, Linux VPS, SSL, Docker basics, Docker Compose basics",
         aiTools:
           "Claude Code, Codex CLI, Gemini CLI, UI iteration, repository analysis, prompt workflows",
-        tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
+        tools:
+          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Vitest + Testing Library (basics)",
       },
       copy: {
         "atiz-1":
@@ -87,7 +90,7 @@
         "cslogbook-3":
           "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
         "tradebot-1":
-          "Developed a Python-based trading bot concept for XAU/USD with MT4 API execution and a web monitoring interface.",
+          "Developed a Python-based trading bot concept for XAU/USD with a web monitoring interface.",
         "reservation-1":
           "Developed reservation website screens that allow users to schedule sports court bookings.",
         "reservation-2":
@@ -105,15 +108,16 @@
         "Available for junior backend, API, database, part-time, freelance, and contract roles.",
       skills: {
         frontend:
-          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Ant Design",
+          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS",
         backend:
           "Node.js, Express, REST API, JWT Authentication, API Integration, backend workflow design",
         database:
-          "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
-        devops: "Docker, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
+          "MySQL, SQL Queries, Database Design, ER Diagram, PostgreSQL basics",
+        devops: "Docker, Docker Compose, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
         aiTools:
           "Claude Code, Codex CLI, Gemini CLI, backend analysis, automation prompts, repository review",
-        tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
+        tools:
+          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Vitest + Testing Library (basics)",
       },
       copy: {
         "atiz-1":
@@ -135,7 +139,7 @@
         "cslogbook-3":
           "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
         "tradebot-1":
-          "Developed a Python-based trading bot concept for XAU/USD with MT4 API-based execution and web monitoring.",
+          "Developed a Python-based trading bot concept for XAU/USD with web monitoring.",
         "reservation-1":
           "Developed reservation workflow features for scheduling sports court bookings.",
         "reservation-2":
@@ -153,15 +157,16 @@
         "Available for junior software engineer, full-stack, part-time, freelance, and contract roles.",
       skills: {
         frontend:
-          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Responsive UI",
+          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Responsive UI",
         backend:
           "Node.js, Express, REST API, JWT Authentication, API Integration",
         database:
-          "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
-        devops: "Docker, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
+          "MySQL, SQL Queries, Database Design, ER Diagram, PostgreSQL basics",
+        devops: "Docker, Docker Compose, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
         aiTools:
           "Claude Code, Codex CLI, Gemini CLI, project setup, coding review, repository analysis",
-        tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
+        tools:
+          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Vitest + Testing Library (basics)",
       },
       copy: {
         "atiz-1":
@@ -183,7 +188,7 @@
         "cslogbook-3":
           "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
         "tradebot-1":
-          "Developed a Python-based trading bot concept for XAU/USD with MT4 API execution and a web monitoring interface.",
+          "Developed a Python-based trading bot concept for XAU/USD with a web monitoring interface.",
         "reservation-1":
           "Developed reservation workflows that allow users to schedule sports court bookings.",
         "reservation-2":
@@ -201,15 +206,16 @@
         "Available for software development, junior software engineer, full-stack, part-time, freelance, and contract roles.",
       skills: {
         frontend:
-          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Responsive UI",
+          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Responsive UI",
         backend:
           "Node.js, Express, REST API, JWT Authentication, API Integration",
         database:
-          "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
-        devops: "Docker, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
+          "MySQL, SQL Queries, Database Design, ER Diagram, PostgreSQL basics",
+        devops: "Docker, Docker Compose, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
         aiTools:
           "Claude Code, Codex CLI, Gemini CLI, project setup, coding review, repository analysis",
-        tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
+        tools:
+          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Vitest + Testing Library (basics)",
       },
       copy: {
         "atiz-1":
@@ -231,7 +237,7 @@
         "cslogbook-3":
           "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
         "tradebot-1":
-          "Developed a Python-based trading bot concept for XAU/USD with MT4 API execution and a web monitoring interface.",
+          "Developed a Python-based trading bot concept for XAU/USD with a web monitoring interface.",
         "reservation-1":
           "Developed reservation workflows that allow users to schedule sports court bookings.",
         "reservation-2":
@@ -279,7 +285,7 @@
         "cslogbook-3":
           "Validated frontend/backend integration and performed pre-deployment checks across Docker, Nginx, SSL, VPS, and GitHub Actions.",
         "tradebot-1":
-          "Developed and reviewed a Python-based trading bot concept with MT4 API execution and a web monitoring interface.",
+          "Developed and reviewed a Python-based trading bot concept with a web monitoring interface.",
         "reservation-1":
           "Designed and manually tested reservation website workflows for sports court booking scenarios.",
         "reservation-2":
@@ -301,11 +307,13 @@
         backend:
           "Node.js, Express, REST API, JWT Authentication, service integration",
         database:
-          "MySQL, SQL Queries, Database Design, ER Diagram, Sequelize, PostgreSQL basics",
-        devops: "Linux VPS, Nginx, Docker, SSL, GitHub Actions, CI/CD, deployment support",
+          "MySQL, SQL Queries, Database Design, ER Diagram, PostgreSQL basics",
+        devops:
+          "Linux VPS, Nginx, Docker, Docker Compose, SSL, GitHub Actions, CI/CD, deployment support",
         aiTools:
           "Claude Code, Codex CLI, Gemini CLI, ops analysis, automation prompts, repository review",
-        tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
+        tools:
+          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Vitest + Testing Library (basics)",
       },
       copy: {
         "atiz-1":
@@ -327,7 +335,7 @@
         "cslogbook-3":
           "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
         "tradebot-1":
-          "Developed a Python-based trading bot concept with MT4 API execution and a web monitoring interface.",
+          "Developed a Python-based trading bot concept with a web monitoring interface.",
         "reservation-1":
           "Developed reservation workflows for scheduling sports court bookings.",
         "reservation-2":
@@ -350,10 +358,12 @@
           "Node.js, Express, REST API, JWT Authentication, API Integration",
         database:
           "MySQL, SQL Queries, Database Design, ER Diagram, dashboard data workflows",
-        devops: "GitHub Actions, Docker, Nginx, Linux VPS, SSL, deployment awareness",
+        devops:
+          "GitHub Actions, Docker, Docker Compose, Nginx, Linux VPS, SSL, deployment awareness",
         aiTools:
           "Claude Code, Codex CLI, Gemini CLI, prompt workflows, AI-assisted review, project setup",
-        tools: "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench",
+        tools:
+          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Vitest + Testing Library (basics)",
       },
       copy: {
         "atiz-1":
@@ -375,7 +385,7 @@
         "cslogbook-3":
           "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
         "tradebot-1":
-          "Developed a Python-based trading bot concept with MT4 API execution and a web monitoring interface.",
+          "Developed a Python-based trading bot concept with a web monitoring interface.",
         "reservation-1":
           "Developed reservation workflows that support clear user scheduling behavior.",
         "reservation-2":

@@ -111,7 +111,7 @@
 
     roleSelect.value = selectedRoleKey;
     roleTitle.textContent = role.title;
-    summaryPrefix.textContent = role.summaryPrefix;
+    summaryPrefix.textContent = role.summaryPrefix + " ";
     summaryBody.textContent = role.summaryBody;
     availability.textContent = role.availability;
     document.title = "Chinnakrit Sripan Resume - " + role.title;
