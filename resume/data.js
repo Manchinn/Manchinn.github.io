@@ -49,6 +49,55 @@
           "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
       },
     },
+    "ai-developer": {
+      title: "AI-Assisted Software Developer",
+      summaryPrefix: "Junior software developer",
+      summaryBody:
+        "with hands-on experience combining full-stack web development with AI-assisted workflows and AI coding agents (Claude Code, Codex CLI, ChatGPT, Claude). Experienced in leveraging AI tools to accelerate feature implementation, analyze codebases, write unit tests, automate repetitive development tasks, and debug systematically while maintaining code quality and clean architecture.",
+      availability:
+        "Available for junior developer, AI-assisted development, full-stack, part-time, freelance, and contract roles.",
+      skills: {
+        frontend:
+          "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Responsive UI",
+        backend:
+          "Node.js, Express, REST API, JWT Authentication, API Integration",
+        database:
+          "MySQL, SQL Queries, Database Design, ER Diagram, PostgreSQL basics",
+        devops: "Docker, Docker Compose, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
+        aiTools:
+          "Claude Code, Codex CLI, ChatGPT, Claude, Prompt Engineering, Agentic Workflows, AI Pair Programming",
+        tools:
+          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Vitest + Testing Library (basics)",
+      },
+      copy: {
+        "atiz-1":
+          "Developed web application features across frontend implementation and API integration using AI-assisted workflows for rapid prototyping and delivery.",
+        "atiz-2":
+          "Translated stakeholder requirements and UX/UI design handoff into practical, clean web application workflows.",
+        "experience-1":
+          "Collaborated with the development team on GetX, a business management platform.",
+        "experience-2":
+          "Developed database queries to extract and aggregate business data for dashboard displays.",
+        "experience-3":
+          "Connected frontend interfaces with backend data sources and supported API-based data display.",
+        "experience-4":
+          "Practiced professional development workflow, clear communication, and agile delivery in a team environment.",
+        "cslogbook-1":
+          "Built a full-stack web application for KMUTNB Computer Science students to support internship tracking, special project tracking, user management, and activity logging.",
+        "cslogbook-2":
+          "Developed frontend and backend features for authentication, progress tracking, activity logs, analytics, reporting, relational database design, API integration, and role-based workflows.",
+        "cslogbook-3":
+          "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions CI/CD.",
+        "tradebot-1":
+          "Developed a Python-based trading bot concept for XAU/USD with a web monitoring interface and automated logic.",
+        "reservation-1":
+          "Developed a website for sports court reservations, allowing users to schedule their reservations.",
+        "reservation-2":
+          "Developed use cases, ER diagram, activity diagram, sequence diagram, and state diagram during the early stage of the project.",
+        "reservation-3":
+          "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
+      },
+    },
     frontend: {
       title: "Frontend Developer",
       summaryPrefix: "Junior frontend developer",
