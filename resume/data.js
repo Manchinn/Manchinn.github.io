@@ -22,9 +22,13 @@
       },
       copy: {
         "atiz-1":
-          "Developed web application features across frontend implementation and API integration.",
+          "Developed and maintained responsive web applications for booking, management, and business operation systems.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into practical web application workflows.",
+          "Built reusable UI components and integrated frontend with RESTful APIs, including OTP verification and JWT-based session handling.",
+        "atiz-3":
+          "Collaborated closely with backend developers to define API requirements, validate integrations, and resolve technical issues.",
+        "atiz-4":
+          "Participated in requirement analysis, feature testing, performance optimization, and production bug fixing across the SDLC.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -71,9 +75,13 @@
       },
       copy: {
         "atiz-1":
-          "Developed web application features across frontend implementation and API integration using AI-assisted workflows for rapid prototyping and delivery.",
+          "Developed and maintained responsive web applications for booking, management, and business operation systems using AI-assisted workflows for rapid prototyping.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into practical, clean web application workflows.",
+          "Built reusable UI components and integrated RESTful APIs with OTP verification and JWT-based session handling.",
+        "atiz-3":
+          "Collaborated with backend developers on API contracts, validating integrations and analyzing technical workflows.",
+        "atiz-4":
+          "Leveraged AI tooling for code review, systematic debugging, performance optimization, and production issue resolution.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -121,9 +129,13 @@
       },
       copy: {
         "atiz-1":
-          "Developed frontend web application features and connected them with API-driven data workflows.",
+          "Developed and maintained responsive web applications for booking, management, and business operation systems.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into responsive web application interfaces.",
+          "Built reusable UI components based on UX/UI design handoffs and integrated with RESTful APIs, OTP verification, and JWT session handling.",
+        "atiz-3":
+          "Collaborated closely with backend developers to define API requirements and ensure seamless UI integration.",
+        "atiz-4":
+          "Optimized frontend performance, usability, and cross-device compatibility while maintaining and fixing production issues.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -170,9 +182,13 @@
       },
       copy: {
         "atiz-1":
-          "Developed web application features with API integration and backend-connected data workflows.",
+          "Developed web application features and operational workflows for booking, management, and business systems.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into API-backed application workflows.",
+          "Connected frontend interfaces with RESTful APIs, implementing OTP verification and JWT authentication workflows.",
+        "atiz-3":
+          "Collaborated closely with backend developers to define API endpoints, data models, integration contracts, and error handling.",
+        "atiz-4":
+          "Participated in SDLC delivery, investigating backend/API integration issues, validating data payloads, and troubleshooting production bugs.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -219,9 +235,13 @@
       },
       copy: {
         "atiz-1":
-          "Developed web application features across frontend implementation and API integration.",
+          "Developed and maintained web application features for booking, management, and business operations.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into practical web application workflows.",
+          "Implemented reusable UI components and integrated RESTful APIs with OTP verification and JWT authentication.",
+        "atiz-3":
+          "Collaborated across teams to establish API contracts, validate integrations, and resolve technical blockers.",
+        "atiz-4":
+          "Participated across the full SDLC including requirement analysis, automated/manual testing, performance optimization, and bug fixing.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -268,9 +288,13 @@
       },
       copy: {
         "atiz-1":
-          "Developed web application features across frontend implementation and API integration.",
+          "Developed and maintained responsive web applications for booking, management, and business operation systems.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into practical web application workflows.",
+          "Built reusable UI components and connected frontend flows with RESTful APIs and secure authentication.",
+        "atiz-3":
+          "Collaborated with backend developers to define API requirements, validate integrations, and resolve technical issues.",
+        "atiz-4":
+          "Practiced structured development workflows, requirement analysis, feature delivery, and production maintenance.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -316,9 +340,13 @@
       },
       copy: {
         "atiz-1":
-          "Participated in frontend implementation while validating web application behavior, API integration, and user workflows.",
+          "Tested and verified web application features for booking, management, and business operation systems.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into practical test scenarios and delivery checks.",
+          "Validated UI component behavior, responsive layouts, and API integrations including OTP verification and JWT authentication flows.",
+        "atiz-3":
+          "Collaborated with developers to report defects, reproduce edge cases, and verify bug fixes against requirements.",
+        "atiz-4":
+          "Participated in requirement analysis, regression testing, and cross-device compatibility validation across release cycles.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform, and reviewed feature behavior during delivery.",
         "experience-2":
@@ -366,9 +394,13 @@
       },
       copy: {
         "atiz-1":
-          "Developed web application features with API integration and deployment-aware implementation.",
+          "Developed and supported web application systems for booking, management, and business operations.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into system-aware application workflows.",
+          "Integrated frontend with RESTful APIs, OTP verification, and JWT-based session management.",
+        "atiz-3":
+          "Collaborated with backend developers on API communication, network payloads, and deployment verification.",
+        "atiz-4":
+          "Investigated production issues, assisted with service troubleshooting, and optimized cross-device performance.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -416,9 +448,13 @@
       },
       copy: {
         "atiz-1":
-          "Developed web application features while connecting stakeholder needs, API workflows, and delivery tasks.",
+          "Developed web application features for booking, management, and business operation systems using AI-assisted delivery workflows.",
         "atiz-2":
-          "Translated stakeholder requirements and UX/UI design handoff into practical workflows for implementation.",
+          "Built reusable UI components and integrated RESTful APIs with secure authentication and clear documentation.",
+        "atiz-3":
+          "Collaborated across development roles to communicate API requirements, validate integrations, and solve technical problems.",
+        "atiz-4":
+          "Utilized AI tooling to support code analysis, requirement breakdown, performance checks, and issue troubleshooting.",
         "experience-1":
           "Collaborated with the development team on GetX, a business management platform.",
         "experience-2":
@@ -474,9 +510,13 @@
       },
       copy: {
         "atiz-1":
-          "Supported and maintained live web application features, investigating reported issues and driving them through to a working fix.",
+          "Supported live web application systems for booking, management, and business operations, handling issue intake and operational workflows.",
         "atiz-2":
-          "Clarified requirements with stakeholders and design handoff, then tracked each item to completion and reported progress.",
+          "Diagnosed user issues with account access, OTP verification, and JWT authentication flows, logging and escalating appropriately.",
+        "atiz-3":
+          "Collaborated with developers to communicate technical issues, reproduce reported defects, and verify deployed fixes.",
+        "atiz-4":
+          "Maintained system reliability, documented troubleshooting steps, and tracked production issues to resolution.",
         "experience-1":
           "Worked alongside the development team on GetX, a business management platform, handling requests and questions from teammates during delivery.",
         "experience-2":
