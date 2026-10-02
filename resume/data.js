@@ -1,5 +1,58 @@
 (function () {
   window.resumeRoles = {
+    "junior-developer": {
+      title: "Junior Developer",
+      summaryPrefix: "Junior developer (Computer Science graduate from KMUTNB)",
+      summaryBody:
+        "with hands-on experience in full-stack web development, RESTful APIs, database design, and production deployment. Proficient in JavaScript, HTML/CSS, React.js, Node.js, Express, Python, and SQL. Dedicated to writing clean, maintainable code following software engineering best practices, conducting systematic troubleshooting, and collaborating effectively across teams to deliver high-quality digital solutions.",
+      availability:
+        "Available for junior developer, full-stack, frontend, backend, and software engineering roles.",
+      skills: {
+        frontend:
+          "JavaScript (ES6+), HTML5, CSS3, TypeScript, React.js, Next.js, Tailwind CSS, Responsive Web Design",
+        backend:
+          "Node.js, Express, Python, RESTful API Integration, JWT Authentication, API Contracts",
+        database:
+          "MySQL, PostgreSQL basics, SQL Query Optimization, Database Schema & ER Design",
+        devops: "Docker, Docker Compose, Linux VPS, Nginx, SSL, Git, GitHub Actions, CI/CD",
+        aiTools:
+          "Claude Code, Codex CLI, AI Pair Programming, Prompt Workflows, Code Review & Systematic Debugging",
+        tools:
+          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Troubleshooting & Root Cause Analysis",
+      },
+      copy: {
+        "atiz-1":
+          "Co-designed, developed, and maintained responsive web applications for booking and business operation systems to meet project requirements.",
+        "atiz-2":
+          "Built clean, modular UI components and integrated frontend with RESTful APIs, OTP verification, and JWT session management.",
+        "atiz-3":
+          "Collaborated closely with cross-functional team members to define API contracts, validate integrations, and resolve technical blockers.",
+        "atiz-4":
+          "Participated in requirement analysis, code quality reviews, systematic troubleshooting, and performance optimization across the SDLC.",
+        "experience-1":
+          "Collaborated with the engineering team on GetX, a business management platform, following agile workflows.",
+        "experience-2":
+          "Developed optimized database queries to aggregate and structure business data for real-time dashboards.",
+        "experience-3":
+          "Integrated frontend interfaces with backend data sources and supported API-driven data displays.",
+        "experience-4":
+          "Practiced professional software delivery standards, proactive communication, and continuous learning in a team environment.",
+        "cslogbook-1":
+          "Built a full-stack web application for KMUTNB Computer Science students for internship and project tracking with user management.",
+        "cslogbook-2":
+          "Developed core features for authentication, progress logging, reporting, relational database architecture, and role-based workflows.",
+        "cslogbook-3":
+          "Deployed and maintained production infrastructure using Docker containers, Linux VPS, Nginx, SSL, and GitHub Actions CI/CD.",
+        "tradebot-1":
+          "Developed a Python-based trading bot concept for XAU/USD with a web monitoring interface and automated logic.",
+        "reservation-1":
+          "Developed a sports court reservation web platform allowing users to manage and schedule bookings.",
+        "reservation-2":
+          "Designed use case diagrams, ER diagrams, activity diagrams, and sequence diagrams to clarify architectural data flows.",
+        "reservation-3":
+          "Built core reservation workflows and backend API services using ReactJS, NodeJS, and ExpressJS.",
+      },
+    },
     fullstack: {
       title: "Full-stack Developer",
       summaryPrefix: "Junior full-stack developer",
