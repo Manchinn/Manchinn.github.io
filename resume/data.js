@@ -57,17 +57,17 @@
       title: "Full-stack Developer",
       summaryPrefix: "Junior full-stack developer",
       summaryBody:
-        "with hands-on experience building and deploying real web applications using React.js, Next.js, Node.js, Express, and relational databases. Experienced in API integration, database-backed dashboards, authentication workflows, and practical product delivery. Able to communicate progress clearly, learn quickly, and work with BA/design requirements.",
+        "with hands-on experience building and deploying web applications, backend services, and RESTful APIs using Go (Golang), Node.js, and relational databases. Experienced in SQL database optimization, API integration, authentication workflows, Docker containerization, and agile team delivery. Fast learner with strong computer science foundations, ready to contribute to healthcare and business software solutions.",
       availability:
-        "Available for junior full-stack, part-time, freelance, and contract roles.",
+        "Available for full-stack, backend, contract, and software engineering roles.",
       skills: {
         frontend:
           "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Responsive UI",
         backend:
-          "Node.js, Express, REST API, JWT Authentication, API Integration",
+          "Go (Golang), Node.js, Express, RESTful APIs, Backend Services, JWT Authentication, API Integration",
         database:
-          "MySQL, SQL Queries, Database Design, ER Diagram, PostgreSQL basics",
-        devops: "Docker, Docker Compose, Nginx, Linux VPS, SSL, GitHub Actions, CI/CD",
+          "MySQL, PostgreSQL, SQL Query Optimization, Database Indexing, Schema & ER Design",
+        devops: "Docker, Docker Compose, Nginx Reverse Proxy, Linux VPS, SSL, GitHub Actions CI/CD, Agile/Scrum",
         aiTools:
           "Claude Code, Codex CLI, Gemini CLI, project setup, repository analysis, prompt workflows, OpenAI-compatible API usage",
         tools:
@@ -75,27 +75,27 @@
       },
       copy: {
         "atiz-1":
-          "Developed and maintained responsive web applications for booking, management, and business operation systems.",
+          "Developed and maintained responsive web applications and operational management workflows for booking and business systems.",
         "atiz-2":
           "Built reusable UI components and integrated frontend with RESTful APIs, including OTP verification and JWT-based session handling.",
         "atiz-3":
-          "Collaborated closely with backend developers to define API requirements, validate integrations, and resolve technical issues.",
+          "Collaborated closely in an agile team to define RESTful API requirements, validate integrations, and resolve technical issues.",
         "atiz-4":
-          "Participated in requirement analysis, feature testing, performance optimization, and production bug fixing across the SDLC.",
+          "Participated in requirement analysis, feature testing, database query and performance optimization, and production bug fixing across the SDLC.",
         "experience-1":
-          "Collaborated with the development team on GetX, a business management platform.",
+          "Collaborated with the engineering team on GetX, an enterprise business management platform, following agile workflows.",
         "experience-2":
-          "Developed database queries to extract and aggregate business data for dashboard displays.",
+          "Developed and optimized SQL queries to extract and aggregate business data for real-time dashboard displays.",
         "experience-3":
-          "Connected frontend interfaces with backend data sources and supported API-based data display.",
+          "Connected frontend interfaces with backend services and supported high-reliability API-driven data displays.",
         "experience-4":
           "Practiced professional development workflow, communication, and task delivery in a team environment.",
         "cslogbook-1":
           "Built a web application for KMUTNB Computer Science students to support internship tracking, special project tracking, user management, and activity logging.",
         "cslogbook-2":
-          "Developed frontend and backend features for authentication, progress tracking, activity logs, analytics, reporting, relational database design, API integration, and role-based workflows.",
+          "Developed frontend and backend services for authentication, progress tracking, analytics, reporting, relational database design (SQL), REST API integration, and role-based workflows.",
         "cslogbook-3":
-          "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
+          "Containerized and deployed production web infrastructure using Docker, Nginx, SSL, Linux VPS, and automated GitHub Actions CI/CD.",
         "tradebot-1":
           "Developed a Python-based trading bot concept for XAU/USD with a web monitoring interface.",
         "reservation-1":
