@@ -426,56 +426,64 @@
     },
     "system-engineer": {
       title: "System Engineer",
-      summaryPrefix: "Junior system engineer",
+      summaryPrefix: "Junior system engineer (Computer Science graduate from KMUTNB)",
       summaryBody:
-        "with hands-on experience deploying and maintaining web applications across Linux VPS, Nginx, SSL, Docker, GitHub Actions, Node.js services, and database-backed systems. Experienced in API-connected applications, troubleshooting, CI/CD awareness, and practical operations support.",
+        "with hands-on experience provisioning, configuring, and maintaining production Linux VPS, Docker containerized services, Nginx reverse proxy, and SSL/TLS infrastructure. Strong foundation in Operating Systems (Linux & Windows), TCP/IP networking, DNS/DHCP, and systematic troubleshooting. Proficient in Bash & Python scripting for server automation, log diagnostics, and monitoring, with practical knowledge of virtualization architectures (VMware ESXi, Hyper-V).",
       availability:
-        "Available for junior system engineer, DevOps support, web operations, part-time, freelance, and contract roles.",
+        "Available for junior system engineer, IT infrastructure, DevOps support, and enterprise systems roles.",
+      skillLabels: {
+        frontend: "Operating Systems",
+        backend: "Networking & Security",
+        database: "Storage, Backup & DB",
+        devops: "Virtualization & Containers",
+        aiTools: "Scripting & Automation",
+        tools: "Diagnostics & Tools",
+      },
       skills: {
         frontend:
-          "React.js, Next.js, HTML, CSS, web application structure awareness",
+          "Linux (Ubuntu, Debian, systemd, SSH, cron, user/permission management), Windows Server fundamentals, PowerShell, Active Directory concepts",
         backend:
-          "Node.js, Express, REST API, JWT Authentication, service integration",
+          "TCP/IP, DNS, DHCP, Subnetting, Port Forwarding, Nginx (Reverse Proxy & SSL/TLS termination), UFW/iptables, Tailscale mesh VPN",
         database:
-          "MySQL, SQL Queries, Database Design, ER Diagram, PostgreSQL basics",
+          "MySQL, PostgreSQL, Storage & RAID concepts (RAID 0/1/5/10, NAS/SAN fundamentals), automated backup scripts",
         devops:
-          "Linux VPS, Nginx, Docker, Docker Compose, SSL, GitHub Actions, CI/CD, deployment support",
+          "Docker, Docker Compose, container lifecycle, VMware ESXi / Hyper-V fundamentals, GitHub Actions CI/CD",
         aiTools:
-          "Claude Code, Codex CLI, Gemini CLI, ops analysis, automation prompts, repository review",
+          "Bash scripting, Python scripting, process automation, systemd daemon supervision, Claude Code / Codex CLI for ops",
         tools:
-          "Git, GitHub, VS Code, Cursor, Postman, MySQL Workbench, Vitest + Testing Library (basics)",
+          "htop, iostat, vmstat, journalctl, syslog, curl, netstat, Postman, Git, GitHub, VS Code",
       },
       copy: {
         "atiz-1":
-          "Developed and supported web application systems for booking, management, and business operations.",
+          "Supported server environment setup, deployment verification, and client-server connectivity for business booking and operation systems.",
         "atiz-2":
-          "Integrated frontend with RESTful APIs, OTP verification, and JWT-based session management.",
+          "Investigated client-server integration issues, network latency, API status codes, and SSL/CORS configurations across environments.",
         "atiz-3":
-          "Collaborated with backend developers on API communication, network payloads, and deployment verification.",
+          "Collaborated closely with development teams to analyze system requirements, define API contracts, and resolve technical blockers.",
         "atiz-4":
-          "Investigated production issues, assisted with service troubleshooting, and optimized cross-device performance.",
+          "Participated in production bug fixing, pre-release compatibility validation, and incident root-cause troubleshooting across the SDLC.",
         "experience-1":
-          "Collaborated with the development team on GetX, a business management platform.",
+          "Collaborated with the engineering team on GetX business management platform following structured team delivery workflows.",
         "experience-2":
-          "Supported dashboard data extraction and aggregation through database queries.",
+          "Developed and optimized database queries to aggregate operational metrics and support real-time data integrity.",
         "experience-3":
-          "Connected frontend interfaces with backend data sources and API-based application flows.",
+          "Monitored data transmission flows between client interfaces, backend services, and database repositories.",
         "experience-4":
-          "Practiced delivery workflow, team communication, and task handoff in a system-oriented development environment.",
+          "Practiced standard operating procedures, disciplined incident tracking, and technical task handoff in a team environment.",
         "cslogbook-1":
-          "Built a web application for internship tracking, project tracking, user management, and activity logging.",
+          "Provisioned, configured, and maintained production Linux VPS hosting the KMUTNB Computer Science progress tracking platform.",
         "cslogbook-2":
-          "Developed authentication, progress tracking, activity logs, reporting, database design, API integration, and role-based workflows.",
+          "Architected multi-container deployment using Docker Compose, isolating web application, worker, and database services with persistent volumes.",
         "cslogbook-3":
-          "Deployed and maintained real web application infrastructure using Docker, Nginx, SSL, VPS, and GitHub Actions.",
+          "Configured Nginx Reverse Proxy with automated Let's Encrypt SSL/TLS, managed DNS records, and automated deployments via GitHub Actions.",
         "tradebot-1":
-          "Developed a Python-based trading bot concept with a web monitoring interface.",
+          "Configured and supervised a 24/7 Python daemon service on a remote Linux server with systemd auto-restart and webhook alerts.",
         "reservation-1":
-          "Developed reservation workflows for scheduling sports court bookings.",
+          "Developed sports court reservation platform workflows with structured system state handling and data persistence.",
         "reservation-2":
-          "Prepared use cases and diagrams to clarify workflow, data structure, and system states.",
+          "Designed architectural diagrams (use case, ER diagram, sequence diagram) to map system data flows and service boundaries.",
         "reservation-3":
-          "Built core reservation workflow features using ReactJS, NodeJS, and ExpressJS.",
+          "Implemented backend service logic and data endpoints using Node.js and Express with MySQL database integration.",
       },
     },
     "ai-engagement": {
