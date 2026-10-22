@@ -57,16 +57,16 @@
       title: "Full-stack Developer",
       summaryPrefix: "Junior full-stack developer",
       summaryBody:
-        "with hands-on experience building and deploying web applications, backend services, and RESTful APIs using Go (Golang), Node.js, and relational databases. Experienced in SQL database optimization, API integration, authentication workflows, Docker containerization, and agile team delivery. Fast learner with strong computer science foundations, ready to contribute to healthcare and business software solutions.",
+        "with hands-on experience building and deploying responsive web applications, backend services, and RESTful APIs using React.js, Next.js, Node.js, and relational databases (PostgreSQL, MySQL). Experienced in SQL query optimization, API contract integration, authentication workflows (JWT/OTP), Docker containerization, and agile team delivery. Fast learner with strong computer science foundations, ready to contribute to scalable web applications and digital business software solutions.",
       availability:
         "Available for full-stack, backend, contract, and software engineering roles.",
       skills: {
         frontend:
           "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Responsive UI",
         backend:
-          "Go (Golang), Node.js, Express, RESTful APIs, Backend Services, JWT Authentication, API Integration",
+          "Node.js, Express, Go (Golang), RESTful APIs, Backend Services, JWT Authentication, API Integration",
         database:
-          "MySQL, PostgreSQL, SQL Query Optimization, Database Indexing, Schema & ER Design",
+          "PostgreSQL, MySQL, SQL Query Optimization, Database Indexing, Schema & ER Design",
         devops: "Docker, Docker Compose, Nginx Reverse Proxy, Linux VPS, SSL, GitHub Actions CI/CD, Agile/Scrum",
         aiTools:
           "Claude Code, Codex CLI, Gemini CLI, project setup, repository analysis, prompt workflows, OpenAI-compatible API usage",
