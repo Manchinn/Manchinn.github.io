@@ -66,9 +66,22 @@ a:focus-visible {
   padding: 10px 12px;
 }
 
-.toolbar button {
+.toolbar button,
+.toolbar .toolbar__download {
   background: #fff;
   color: #111827;
+}
+
+.item-links {
+  color: var(--muted);
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.item-sub {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 2px;
 }
 
 .role-picker {
@@ -325,8 +338,8 @@ li {
     background: #fff;
     box-shadow: none;
     margin: 0;
-    min-height: 296mm;
-    padding: 10mm 13mm;
+    min-height: auto;
+    padding: 9mm 13mm;
     width: 210mm;
   }
 
@@ -377,9 +390,16 @@ li {
   }
 
   section {
-    break-inside: avoid;
-    margin-top: 11px;
-    page-break-inside: avoid;
+    margin-top: 9px;
+  }
+
+  .item-sub {
+    font-size: 8.4pt;
+    margin-top: 1px;
+  }
+
+  .item-links {
+    font-size: 8.2pt;
   }
 
   .resume__header,
@@ -497,4 +517,11 @@ li {
     width: 68px;
     height: 82px;
   }
+  .resume--no-photo .resume__photo {
+    display: none !important;
+  }
+}
+
+.resume--no-photo .resume__photo {
+  display: none !important;
 }

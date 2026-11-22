@@ -1,6 +1,8 @@
 (function () {
   var roles = window.resumeRoles || {};
-  var defaultRole = "fullstack";
+  var bodyInitialRole = document.body && document.body.getAttribute("data-initial-role");
+  var pdfBase = (document.body && document.body.getAttribute("data-pdf-base")) || "pdf/";
+  var defaultRole = (bodyInitialRole && roles[bodyInitialRole]) ? bodyInitialRole : "fullstack";
   var defaultTemplate = "standard";
   var roleSelect = document.getElementById("role-select");
   var templateSelect = document.getElementById("template-select");
@@ -10,6 +12,7 @@
   var summaryBody = document.querySelector("[data-role-summary-body]");
   var availability = document.querySelector("[data-role-availability]");
   var printButton = document.getElementById("print-resume");
+  var downloadPdfLink = document.getElementById("download-pdf");
   var storageKey = "manchinn-resume-role";
   var templateStorageKey = "manchinn-resume-template";
 
@@ -78,7 +81,7 @@
     document.querySelectorAll("[data-role-skill]").forEach(function (element) {
       var skillKey = element.getAttribute("data-role-skill");
 
-      if (skills[skillKey]) {
+      if (skills && skills[skillKey]) {
         element.textContent = skills[skillKey];
       }
     });
@@ -99,7 +102,7 @@
     document.querySelectorAll("[data-role-copy]").forEach(function (element) {
       var copyKey = element.getAttribute("data-role-copy");
 
-      if (copy[copyKey]) {
+      if (copy && copy[copyKey]) {
         element.textContent = copy[copyKey];
       }
     });
@@ -108,13 +111,19 @@
   function setRole(roleKey, shouldPersist) {
     var selectedRoleKey = getRole(roleKey);
     var role = roles[selectedRoleKey];
+    if (!role) return;
 
-    roleSelect.value = selectedRoleKey;
-    roleTitle.textContent = role.title;
-    summaryPrefix.textContent = role.summaryPrefix + " ";
-    summaryBody.textContent = role.summaryBody;
-    availability.textContent = role.availability;
+    if (roleSelect) roleSelect.value = selectedRoleKey;
+    if (roleTitle) roleTitle.textContent = role.title;
+    if (summaryPrefix) summaryPrefix.textContent = role.summaryPrefix + " ";
+    if (summaryBody) summaryBody.textContent = role.summaryBody;
+    if (availability) availability.textContent = role.availability;
     document.title = "Chinnakrit Sripan Resume - " + role.title;
+
+    if (downloadPdfLink) {
+      downloadPdfLink.setAttribute("href", pdfBase + selectedRoleKey + ".pdf");
+      downloadPdfLink.setAttribute("download", "Chinnakrit-Sripan-" + selectedRoleKey + ".pdf");
+    }
 
     applySkills(role.skills);
     applySkillLabels(role.skillLabels);
@@ -122,41 +131,60 @@
 
     if (shouldPersist) {
       saveRole(selectedRoleKey);
-      updateUrl(selectedRoleKey, templateSelect.value);
+      updateUrl(selectedRoleKey, templateSelect ? templateSelect.value : defaultTemplate);
     }
   }
 
   function setTemplate(templateKey, shouldPersist) {
-    var selectedTemplate = (templateKey === "harvard") ? "harvard" : "standard";
-    templateSelect.value = selectedTemplate;
+    var selectedTemplate =
+      templateKey === "harvard" || templateKey === "harvard-no-photo"
+        ? templateKey
+        : "standard";
 
-    if (selectedTemplate === "harvard") {
-      resumeElement.classList.add("resume--harvard");
-    } else {
-      resumeElement.classList.remove("resume--harvard");
+    if (templateSelect) templateSelect.value = selectedTemplate;
+
+    if (resumeElement) {
+      if (selectedTemplate === "harvard" || selectedTemplate === "harvard-no-photo") {
+        resumeElement.classList.add("resume--harvard");
+      } else {
+        resumeElement.classList.remove("resume--harvard");
+      }
+
+      if (selectedTemplate === "harvard-no-photo") {
+        resumeElement.classList.add("resume--no-photo");
+      } else {
+        resumeElement.classList.remove("resume--no-photo");
+      }
     }
 
     if (shouldPersist) {
       saveTemplate(selectedTemplate);
-      updateUrl(roleSelect.value, selectedTemplate);
+      updateUrl(roleSelect ? roleSelect.value : defaultRole, selectedTemplate);
     }
   }
 
-  roleSelect.addEventListener("change", function () {
-    setRole(roleSelect.value, true);
-  });
+  if (roleSelect) {
+    roleSelect.addEventListener("change", function () {
+      setRole(roleSelect.value, true);
+    });
+  }
 
-  templateSelect.addEventListener("change", function () {
-    setTemplate(templateSelect.value, true);
-  });
+  if (templateSelect) {
+    templateSelect.addEventListener("change", function () {
+      setTemplate(templateSelect.value, true);
+    });
+  }
 
-  printButton.addEventListener("click", function () {
-    setRole(roleSelect.value, true);
-    setTemplate(templateSelect.value, true);
-    window.print();
-  });
+  if (printButton) {
+    printButton.addEventListener("click", function () {
+      if (roleSelect) setRole(roleSelect.value, true);
+      if (templateSelect) setTemplate(templateSelect.value, true);
+      window.print();
+    });
+  }
 
-  var initRole = getRoleFromUrl() || getSavedRole() || defaultRole;
+  var isStaticRolePage = Boolean(bodyInitialRole && bodyInitialRole !== "fullstack");
+  var initRole = getRoleFromUrl() || (isStaticRolePage ? defaultRole : (getSavedRole() || defaultRole));
   var initTemplate = getTemplateFromUrl() || getSavedTemplate() || defaultTemplate;
   setRole(initRole, false);
   setTemplate(initTemplate, false);
