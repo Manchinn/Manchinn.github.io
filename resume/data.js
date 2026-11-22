@@ -196,24 +196,24 @@
       title: "AI Engineer",
       summaryPrefix: "Junior AI engineer (Computer Science graduate from KMUTNB)",
       summaryBody:
-        "with hands-on experience building production LLM-powered applications, structured-output scoring pipelines, and full-stack web services using Python, Node.js/TypeScript, and SQL. Experienced in LLM API integration, prompt & rubric evaluation, function calling / tool use, embeddings & RAG architecture concepts, token latency/cost control, and containerized Linux VPS deployment with Docker and CI/CD.",
+        "with hands-on experience building production LLM-powered applications, structured-output scoring pipelines, and full-stack web services using Python, Node.js/TypeScript, and SQL. Experienced in LLM API integration, prompt & rubric evaluation, structured-output scoring, token latency/cost control, and containerized Linux VPS deployment with Docker and CI/CD.",
       availability:
         "Available for AI engineer, LLM application developer, AI software engineer, and full-stack AI roles.",
       skillLabels: {
         frontend: "AI & LLM Engineering",
         backend: "Backend & APIs",
-        database: "Data, Vector & SQL",
+        database: "Data & SQL",
         devops: "Deployment & Ops",
         aiTools: "Frontend & Interfaces",
         tools: "Evaluation & Tooling",
       },
       skills: {
         frontend:
-          "OpenAI & Anthropic APIs, Structured Outputs (JSON Schema), Function Calling / Tool Use, RAG & Embeddings Concepts, Prompt Evaluation, Latency & Token Cost Optimization, MCP",
+          "OpenAI & Anthropic APIs, Structured Outputs (JSON Schema), Prompt Evaluation, Latency & Token Cost Optimization, Tool Integration (CLI, MCP)",
         backend:
           "Python, Node.js, TypeScript, Express, RESTful APIs, Async Pipelines, Webhook Integration, JWT/OTP Auth",
         database:
-          "SQLite, PostgreSQL, MySQL, Vector DB Concepts (pgvector/FAISS), SQL Query Optimization, Schema & ER Design",
+          "SQLite, PostgreSQL, MySQL, SQL Query Optimization, Schema & ER Design",
         devops:
           "Docker, Docker Compose, Linux VPS, Cron / Systemd Daemons, Nginx, SSL/TLS, GitHub Actions CI/CD",
         aiTools:
@@ -285,7 +285,7 @@
         backend:
           "Python, Node.js, TypeScript, Playwright, Chrome DevTools Protocol (CDP), Isolated Browser Profiles, Session/Cookie Management, REST APIs",
         database:
-          "LLM API Integration (OpenAI/Anthropic), Structured JSON Extraction, Automated Scoring & Summarization, Prompt Chaining, MCP",
+          "LLM API Integration (OpenAI/Anthropic), Structured JSON Extraction, Automated Scoring & Summarization, Prompt Chaining, Tool Integration (CLI, MCP)",
         devops:
           "Docker, Docker Compose, Linux VPS, Systemd Daemons, Nginx, SSL, Discord/LINE/Webhook Alerting, Log Monitoring",
         aiTools:
@@ -355,7 +355,7 @@
         frontend:
           "Requirement Discovery, Workflow Mapping, PoC Scoping, Cost/Feasibility Analysis (LLM vs. Rule-Based), Stakeholder Alignment",
         backend:
-          "LLM API Integration (OpenAI/Anthropic), RAG & Automation Patterns, RESTful API Contracts, Webhook & Browser Orchestration",
+          "LLM API Integration (OpenAI/Anthropic), Automation Patterns, RESTful API Contracts, Webhook & Browser Orchestration",
         database:
           "React.js, Next.js, Node.js, Express, Python, TypeScript, Rapid Prototyping & Production Handoff",
         devops:

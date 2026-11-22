@@ -7,6 +7,7 @@
  * 4. Verifies every PDF is 1-2 pages A4 and zero undefined/empty fields exist.
  */
 
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
@@ -17,6 +18,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 const resumeDir = path.join(repoRoot, "resume");
 const pdfDir = path.join(resumeDir, "pdf");
+const hashCachePath = path.join(pdfDir, ".pdf-hashes.json");
+
+const args = new Set(process.argv.slice(2));
+const SKIP_PDF = args.has("--no-pdf");
+const FORCE_PDF = args.has("--force-pdf");
 
 const CHROME_CANDIDATES = [
   "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
@@ -239,15 +245,43 @@ function generatePdf(browserPath, htmlPath, pdfPath) {
   return countPdfPages(pdfPath);
 }
 
+function computeHash(...chunks) {
+  const h = crypto.createHash("sha256");
+  for (const c of chunks) h.update(c);
+  return h.digest("hex");
+}
+
+function loadHashCache() {
+  if (!fs.existsSync(hashCachePath)) return {};
+  try {
+    return JSON.parse(fs.readFileSync(hashCachePath, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
 function main() {
   const templateHtml = fs.readFileSync(path.join(resumeDir, "index.html"), "utf8");
+  const styleCss = fs.readFileSync(path.join(resumeDir, "style.css"));
+  const profileImg = fs.existsSync(path.join(resumeDir, "profile.jpg"))
+    ? fs.readFileSync(path.join(resumeDir, "profile.jpg"))
+    : Buffer.alloc(0);
+
   const roles = loadRoles();
   const required = extractRequiredKeys(templateHtml);
   validateRoles(roles, required);
 
   fs.mkdirSync(pdfDir, { recursive: true });
-  const browserPath = findBrowser();
-  console.log(`Using headless browser: ${browserPath}`);
+  const prevHashes = loadHashCache();
+  const nextHashes = { ...prevHashes };
+
+  let browserPath = null;
+  if (!SKIP_PDF) {
+    browserPath = findBrowser();
+    console.log(`Using headless browser: ${browserPath}`);
+  } else {
+    console.log("Skipping PDF generation (--no-pdf).");
+  }
 
   const results = [];
   for (const [roleKey, role] of Object.entries(roles)) {
@@ -258,9 +292,24 @@ function main() {
     fs.writeFileSync(outHtmlPath, rendered, "utf8");
 
     const outPdfPath = path.join(pdfDir, `${roleKey}.pdf`);
+    const contentHash = computeHash(rendered, styleCss, profileImg);
+
+    if (SKIP_PDF) {
+      results.push({ roleKey, status: "html-only" });
+      continue;
+    }
+
+    if (!FORCE_PDF && prevHashes[roleKey] === contentHash && fs.existsSync(outPdfPath)) {
+      const pages = countPdfPages(outPdfPath);
+      const sizeKb = Math.round(fs.statSync(outPdfPath).size / 1024);
+      results.push({ roleKey, pages, sizeKb, status: "cached" });
+      continue;
+    }
+
     const pages = generatePdf(browserPath, outHtmlPath, outPdfPath);
     const sizeKb = Math.round(fs.statSync(outPdfPath).size / 1024);
-    results.push({ roleKey, pages, sizeKb });
+    nextHashes[roleKey] = contentHash;
+    results.push({ roleKey, pages, sizeKb, status: "rebuilt" });
     if (pages < 1 || pages > 2) {
       throw new Error(`PDF for ${roleKey} has ${pages} pages (expected 1-2 A4 pages)!`);
     }
@@ -270,17 +319,37 @@ function main() {
   const thHtmlPath = path.join(resumeDir, "th", "index.html");
   if (fs.existsSync(thHtmlPath)) {
     const thPdfPath = path.join(pdfDir, "th.pdf");
-    const pages = generatePdf(browserPath, thHtmlPath, thPdfPath);
-    const sizeKb = Math.round(fs.statSync(thPdfPath).size / 1024);
-    results.push({ roleKey: "th", pages, sizeKb });
-    if (pages < 1 || pages > 2) {
-      throw new Error(`Thai PDF has ${pages} pages (expected 1-2 A4 pages)!`);
+    const thHtml = fs.readFileSync(thHtmlPath, "utf8");
+    const thHash = computeHash(thHtml, styleCss, profileImg);
+
+    if (SKIP_PDF) {
+      results.push({ roleKey: "th", status: "html-only" });
+    } else if (!FORCE_PDF && prevHashes.th === thHash && fs.existsSync(thPdfPath)) {
+      const pages = countPdfPages(thPdfPath);
+      const sizeKb = Math.round(fs.statSync(thPdfPath).size / 1024);
+      results.push({ roleKey: "th", pages, sizeKb, status: "cached" });
+    } else {
+      const pages = generatePdf(browserPath, thHtmlPath, thPdfPath);
+      const sizeKb = Math.round(fs.statSync(thPdfPath).size / 1024);
+      nextHashes.th = thHash;
+      results.push({ roleKey: "th", pages, sizeKb, status: "rebuilt" });
+      if (pages < 1 || pages > 2) {
+        throw new Error(`Thai PDF has ${pages} pages (expected 1-2 A4 pages)!`);
+      }
     }
   }
 
-  console.log("\nGenerated static routes & PDFs:");
+  if (!SKIP_PDF) {
+    fs.writeFileSync(hashCachePath, JSON.stringify(nextHashes, null, 2) + "\n", "utf8");
+  }
+
+  console.log("\nBuild summary:");
   for (const r of results) {
-    console.log(`  - ${r.roleKey.padEnd(24)} ${r.pages} page(s)  (${r.sizeKb} KB)`);
+    if (r.status === "html-only") {
+      console.log(`  - ${r.roleKey.padEnd(24)} [html-only]`);
+    } else {
+      console.log(`  - ${r.roleKey.padEnd(24)} ${r.pages} page(s)  (${r.sizeKb} KB) [${r.status}]`);
+    }
   }
   console.log("\nAll builds and checks passed.");
 }
