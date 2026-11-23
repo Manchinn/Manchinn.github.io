@@ -306,7 +306,7 @@ li {
 
 @page {
   size: A4;
-  margin: 0;
+  margin: 10mm 13mm;
 }
 
 @media print {
@@ -319,7 +319,7 @@ li {
   body {
     background: #fff;
     height: auto;
-    width: 210mm;
+    width: auto;
   }
 
   html {
@@ -339,8 +339,8 @@ li {
     box-shadow: none;
     margin: 0;
     min-height: auto;
-    padding: 9mm 13mm;
-    width: 210mm;
+    padding: 0;
+    width: 100%;
   }
 
   a {
