@@ -1080,5 +1080,77 @@
           "Built the reservation workflow end to end using ReactJS, NodeJS, and ExpressJS.",
       },
     },
+    "ba-app-support": {
+      title: "Business Analyst & Application Support",
+      summaryPrefix: "Computer Science graduate (KMUTNB) & Technical Business Analyst",
+      summaryBody:
+        "with hands-on experience in enterprise business management platforms, API contract validation, SQL data verification, and full-stack web delivery. Skilled at gathering stakeholder requirements, mapping operational workflows, decomposing features into developer-ready tasks, executing System/UAT testing, logging reproducible bug reports, preparing master data, and supporting end users in Thai and English.",
+      availability:
+        "Available for full-time Business Analyst & Application Support roles.",
+      skillLabels: {
+        frontend: "BA & Documentation",
+        backend: "Testing & App Support",
+        database: "Data & SQL Verification",
+        devops: "Systems & Deployment",
+        aiTools: "Technical & AI Tooling",
+        tools: "Tools & Collaboration",
+      },
+      skills: {
+        frontend:
+          "Requirement Gathering, Workflow Mapping, Task Breakdown, Use Case / ER / Sequence / State Diagrams, User Manuals & SOPs",
+        backend:
+          "System Integration Testing (SIT), User Acceptance Testing (UAT), Bug/Issue Logging, Root-Cause Isolation, End-User Support",
+        database:
+          "SQL (MySQL, PostgreSQL, SQLite), Master Data Preparation & Validation, Query Optimization, Operational Dashboard Reporting",
+        devops:
+          "RESTful API Contracts, JWT/OTP Authentication Flows, Docker, Nginx, SSL, Linux VPS, GitHub Actions CI/CD",
+        aiTools:
+          "React.js, Next.js, TypeScript, Node.js, Python, Claude Code, Codex CLI, Prompt & Automation Workflows",
+        tools:
+          "Git, GitHub, Postman, MySQL Workbench, Excel / Google Sheets, VS Code, Cursor, Thai (Native) & English (Working)",
+      },
+      copy: {
+        "freelance-1":
+          "Gathered workflow pain points and delivered web applications and Python/Node.js automation pipelines for independent projects to eliminate repetitive manual operations.",
+        "freelance-2":
+          "Supported live production services on Linux VPS with Docker, Nginx, SSL, and automated alerts, diagnosing system incidents and maintaining operational runbooks.",
+        "atiz-1":
+          "Translated booking and operational business requirements into responsive web application workflows in collaboration with product and engineering stakeholders.",
+        "atiz-2":
+          "Verified frontend-to-backend integrations covering RESTful APIs, OTP verification, and JWT session security across desktop and mobile devices.",
+        "atiz-3":
+          "Collaborated closely with backend engineers to define API contracts, break down requirements into sprint tasks, and resolve integration blockers.",
+        "atiz-4":
+          "Conducted feature validation, UAT checks, and root-cause defect logging with clear reproduction steps for developer fixes across the SDLC.",
+        "experience-1":
+          "Collaborated with the engineering team on GetX, an enterprise business management platform, aligning operational workflows with system requirements.",
+        "experience-2":
+          "Developed and verified SQL queries to prepare, aggregate, and validate business data feeding real-time operational dashboards.",
+        "experience-3":
+          "Validated end-to-end data accuracy between backend API payloads and frontend business displays prior to release.",
+        "experience-4":
+          "Practiced structured issue follow-up, agile communication, and documentation handoff within an enterprise team environment.",
+        "jobpipeline-1":
+          "Analyzed multi-portal job tracking workflows (JobThai, JobsDB, LinkedIn) and automated structured data collection and deduplication into SQLite.",
+        "jobpipeline-2":
+          "Designed fit-scoring evaluation rules, data validation checks, and automated Discord notifications to support daily operational review.",
+        "jobpipeline-3":
+          "Maintained scheduled Docker + cron execution on Linux VPS with structured logging, error alerts, and recovery procedures.",
+        "cslogbook-1":
+          "Gathered functional requirements from KMUTNB students, advisors, and staff to replace manual internship and project tracking with a unified web system.",
+        "cslogbook-2":
+          "Designed role-based approval workflows, relational SQL schemas, master data structures, and acceptance test scenarios across user roles.",
+        "cslogbook-3":
+          "Supported live rollout on Linux VPS (Docker, Nginx, SSL, GitHub Actions CI/CD), handling user onboarding, issue tracking, and user manuals.",
+        "tradebot-1":
+          "Built a Python monitoring workflow with a live web interface to track execution logs, verify data streams, and flag system anomalies.",
+        "reservation-1":
+          "Analyzed facility booking rules and delivered a web-based sports court reservation workflow preventing slot conflicts.",
+        "reservation-2":
+          "Authored use cases, ER diagram, activity diagram, sequence diagram, and state diagram to align system behavior and workflows prior to development.",
+        "reservation-3":
+          "Verified end-to-end booking workflows and database state across ReactJS UI and NodeJS/ExpressJS endpoints.",
+      },
+    },
   };
 })();
